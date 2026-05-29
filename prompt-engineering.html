@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BA üçün Prompt Engineering — BA Akademiya</title>
+  <meta name="description" content="Biznes analitiklər üçün Azərbaycan dilində prompt engineering bələdçisi: RKTF çərçivəsi, 14 hazır prompt və praktik texnikalar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">BA<span>Akademiya</span></a>
+        <ul class="nav-links">
+          <li><a href="oyren.html">Öyrən</a></li>
+          <li><a href="prompt-engineering.html">Prompt Engineering</a></li>
+          <li><a href="sablonlar.html">Şablonlar</a></li>
+          <li><a href="terminler.html">Terminlər</a></li>
+          <li><a href="bloq.html">Bloq</a></li>
+          <li><a href="icma.html">İcma</a></li>
+          <li><a href="haqqimizda.html">Haqqımızda</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Menyunu aç"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container">
+      <span class="badge">🤖 Prompt Engineering</span>
+      <h1>BA üçün Prompt Engineering</h1>
+      <p>AI alətlərindən gündəlik işdə maksimum fayda almağın yolu düzgün prompt yazmaqdan keçir. Bu bələdçi sənə BA işində birbaşa istifadə edə biləcəyin hazır promptları və onların arxasındakı məntiqi öyrədir.</p>
+    </div>
+  </section>
+
+  <!-- ============ NİYƏ VACİBDİR ============ -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Müasir BA artıq AI olmadan işləmir</h2>
+      <div class="intro-cols">
+        <p>Requirements yazmaq, sənədləri yekunlaşdırmaq, user story generasiya etmək, stakeholder suallarını hazırlamaq — bütün bu işlər indi AI köməyi ilə saatlarla yox, dəqiqələrlə görülür.</p>
+        <p>Lakin AI sadəcə «soruşduğun nədirsə onu» verir. Yaxşı prompt yazmağı bilməyən BA AI-dan ümumi, faydasız cavablar alır. Yaxşı prompt yazan BA isə eyni aləti hesabat hazırlayan, fikir yoxlayan tərəfdaşa çevirir. Bu bələdçi həmin fərqi necə yaratmağı izah edir.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4 ELEMENT (RKTF) ============ -->
+  <section class="section section-soft">
+    <div class="container">
+      <h2 class="section-title">Yaxşı promptun dörd elementi</h2>
+      <p class="section-subtitle">Hər güclü prompt eyni dörd komponentdən qurulur. Bunu <strong>RKTF</strong> (Rol–Kontekst–Tapşırıq–Format) kimi yadda saxla.</p>
+
+      <div class="element-grid">
+        <div class="element-card">
+          <span class="num">01</span>
+          <h4>Rol</h4>
+          <p>AI-a kim olduğunu de. Bu, cavabın tonunu, dərinliyini və terminologiyasını dəyişir.</p>
+          <div class="example">«Sən 10 illik təcrübəli IT biznes analitisisən…»</div>
+        </div>
+        <div class="element-card">
+          <span class="num">02</span>
+          <h4>Kontekst</h4>
+          <p>Layihə, sahə, məhsul, komanda haqqında məlumat ver. Kontekst nə qədər dəqiqdirsə, cavab bir o qədər istifadəlidir.</p>
+          <div class="example">«Bank sektorunda mobil tətbiq layihəsi üzərində işləyirik…»</div>
+        </div>
+        <div class="element-card">
+          <span class="num">03</span>
+          <h4>Tapşırıq</h4>
+          <p>Dəqiq nə istədiyini yaz. «Kömək et» yox, «10 sual yaz», «user story formatına çevir» kimi konkret fellər işlət.</p>
+          <div class="example">«Mənə 15 açıq tipli müsahibə sualı hazırla…»</div>
+        </div>
+        <div class="element-card">
+          <span class="num">04</span>
+          <h4>Format</h4>
+          <p>Cavabın necə görünməsini de: cədvəl, siyahı, user story, BPMN təsviri, Markdown. Bu, nəticəni dərhal istifadəyə hazır edir.</p>
+          <div class="example">«Cavabı cədvəl formatında ver, hər sətrdə…»</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HAZIR PROMPTLAR (ACCORDION) ============ -->
+  <section class="section" id="promptlar">
+    <div class="container">
+      <h2 class="section-title">BA işi üçün hazır promptlar</h2>
+      <p class="section-subtitle">Hər prompta klikləyib aç, <span class="ph">narıncı</span> hissələri öz layihənə uyğunlaşdır, sonra <strong>📋 Kopyala</strong> düyməsini sıx.</p>
+
+      <!-- Kateqoriya 1 -->
+      <div class="prompt-category">
+        <div class="category-header">
+          <span class="category-number">01</span>
+          <h3 class="category-title">Tələblərin toplanması (Elicitation)</h3>
+        </div>
+        <p class="category-desc">Stakeholder müsahibələri, naməlum sahələri kəşf etmək və açıq sualları formalaşdırmaq üçün.</p>
+
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span class="prompt-title">Stakeholder müsahibə sualları</span>
+            <span class="prompt-actions">
+              <button class="copy-btn" type="button">📋 Kopyala</button>
+              <span class="prompt-chevron">▼</span>
+            </span>
+          </div>
+          <div class="prompt-collapse">
+            <p class="prompt-text">Sən təcrübəli IT biznes analitisisən. Mən <span class="ph">[məhsul/layihə adı]</span> üçün <span class="ph">[stakeholder rolu, məs: marketinq direktoru]</span> ilə müsahibəyə hazırlaşıram.
+
+Layihə konteksti: <span class="ph">[2-3 cümlə ilə layihəni təsvir et]</span>.
+
+Mənə açıq tipli (open-ended) 15 sual hazırla ki, aşağıdakıları üzə çıxarsın:
+- Biznes ehtiyacları və məqsədlər
+- Hazırkı ağrı nöqtələri (pain points)
+- Gözləntilər və uğur meyarları
+- Risklər və narahatlıqlar
+
+Sualları 4 kateqoriyaya ayır və hər biri üçün niyə vacib olduğunu bir cümlə ilə izah et.</p>
+          </div>
+        </div>
+
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span class="prompt-title">«Niyə?» zəncirini qurmaq (5 Whys)</span>
+            <span class="prompt-actions">
+              <button class="copy-btn" type="button">📋 Kopyala</button>
+              <span class="prompt-chevron">▼</span>
+            </span>
+          </div>
+          <div class="prompt-collapse">
+            <p class="prompt-text">Stakeholder mənə belə bir tələb verdi: <span class="ph">[tələbi yaz]</span>.
+
+5 Whys metodologiyası ilə bu tələbin əsl kök səbəbini tapmaq üçün ardıcıl 5 «Niyə?» sualı yarat. Hər sualın altında ehtimal olunan cavabları və növbəti sualın necə dəqiqləşməli olduğunu göstər. Sonda kök problemin nə ola biləcəyini xülasə et.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kateqoriya 2 -->
+      <div class="prompt-category">
+        <div class="category-header">
+          <span class="category-number">02</span>
+          <h3 class="category-title">User Story və acceptance criteria</h3>
+        </div>
+        <p class="category-desc">Tələbləri komandanın anladığı standart formata çevirmək.</p>
+
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span class="prompt-title">Tələbi user story formatına çevir</span>
+            <span class="prompt-actions">
+              <button class="copy-btn" type="button">📋 Kopyala</button>
+              <span class="prompt-chevron">▼</span>
+            </span>
+          </div>
+          <div class="prompt-collapse">
+            <p class="prompt-text">Aşağıdakı tələbi standart user story formatına çevir:
+
+«Bir [rol] olaraq, [məqsəd] istəyirəm ki, [fayda].»
+
+Hər biri üçün 3–5 acceptance criteria yaz Gherkin (Given–When–Then) formatında. Həm pozitiv, həm də edge case-ləri əhatə et.
+
+Tələb: <span class="ph">[tələbi yaz]</span></p>
+          </div>
+        </div>
+
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span class="prompt-title">User story-ni INVEST meyarları üzrə qiymətləndir</span>
+            <span class="prompt-actions">
+              <button class="copy-btn" type="button">📋 Kopyala</button>
+              <span class="prompt-chevron">▼</span>
+            </span>
+          </div>
+          <div class="prompt-collapse">
+            <p class="prompt-text">Aşağıdakı user story-ni INVEST meyarları üzrə qiymətləndir (Independent, Negotiable, Valuable, Estimable, Small, Testable).
+
+Hər meyar üçün 1–5 bal ver və zəif olduğu yerləri necə yaxşılaşdırmağı göstər. Sonda yenidən yazılmış təkmilləşdirilmiş versiyasını ver.
+
+User story: <span class="ph">[user story-ni yaz]</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kateqoriya 3 -->
+      <div class="prompt-category">
+        <div class="category-header">
+          <span class="category-number">03</span>
+          <h3 class="category-title">Sənədlər və görüş qeydləri</h3>
+        </div>
+        <p class="category-desc">Uzun mətnləri struktur halında çıxarmaq və BRD/FSD hazırlamaq üçün.</p>
+
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span class="prompt-title">Görüş qeydlərini struktura sal</span>
+            <span class="prompt-actions">
+              <button class="copy-btn" type="button">📋 Kopyala</button>
+              <span class="prompt-chevron">▼</span>
+            </span>
+          </div>
+          <div class="prompt-collapse">
+            <p class="prompt-text">Aşağıdakı görüş qeydlərini oxu və struktur halında çıxar:
+
+1. Görüşün əsas məqsədi (1 cümlə)
+2. Qəbul edilmiş qərarlar (bullet list)
+3. Açıq qalmış suallar
+4. Action item-lər — kim, nə vaxta qədər, nə edəcək (cədvəl formatında)
+5. Müəyyən edilmiş risklər
+6. Növbəti addımlar
+
+Qeydlər:
+<span class="ph">[görüş qeydlərini yapışdır]</span></p>
+          </div>
+        </div>
+
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span class="prompt-title">BRD bölməsi hazırla</span>
+            <span class="prompt-actions">
+              <button class="copy-btn" type="button">📋 Kopyala</button>
+              <span class="prompt-chevron">▼</span>
+            </span>
+          </div>
+          <div class="prompt-collapse">
+            <p class="prompt-text">Mənim aşağıdakı qeyri-rəsmi qeydlərim var. Bunları rəsmi BRD (Business Requirements Document) bölməsinə çevir.
+
+Bölmələr: Executive Summary, Business Objectives, Scope (In-Scope və Out-of-Scope), Stakeholders, Functional Requirements, Non-Functional Requirements, Assumptions, Constraints.
+
+Dil rəsmi, peşəkar olsun. Boşluqları «TBD» (To Be Determined) kimi qeyd et.
+
+Qeydlər: <span class="ph">[qeydlərini yapışdır]</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kateqoriya 4 -->
+      <div class="prompt-category">
+        <div class="category-header">
+          <span class="category-number">04</span>
+          <h3 class="category-title">Proses modelləşdirmə</h3>
+        </div>
+        <p class="category-desc">«As-is» və «to-be» prosesləri təsvir etmək, BPMN üçün məntiqi qurmaq.</p>
+
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span class="prompt-title">Prosesi BPMN üçün təsvir et</span>
+            <span class="prompt-actions">
+              <button class="copy-btn" type="button">📋 Kopyala</button>
+              <span class="prompt-chevron">▼</span>
+            </span>
+          </div>
+          <div class="prompt-collapse">
+            <p class="prompt-text">Aşağıdakı biznes prosesini BPMN diaqramı qurmaq üçün addım-addım təsvir et.
+
+Hər addım üçün göstər:
+- Start event
+- Activity (tapşırıq) — kim icra edir (swimlane)
+- Decision point (qərar nöqtəsi) və mümkün yollar
+- End event(s)
+- Paralel və ya ardıcıl axın
+
+Sonda diaqramı Mermaid sintaksisində flowchart kimi yaz ki, birbaşa render edə bilim.
+
+Proses: <span class="ph">[prosesi təsvir et]</span></p>
+          </div>
+        </div>
+
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span class="prompt-title">Gap analysis: As-is vs To-be</span>
+            <span class="prompt-actions">
+              <button class="copy-btn" type="button">📋 Kopyala</button>
+              <span class="prompt-chevron">▼</span>
+            </span>
+          </div>
+          <div class="prompt-collapse">
+            <p class="prompt-text">Aşağıda mənim «as-is» (cari) və «to-be» (hədəf) prosesim var. Aralarındakı boşluqları (gaps) müəyyən et və cədvəl formatında ver:
+
+| № | Boşluq | Təsir | Prioritet (Yüksək/Orta/Aşağı) | Təklif olunan həll |
+
+Sonda 3 ən kritik boşluğu xülasə et və hansından başlamağı tövsiyə et.
+
+As-is: <span class="ph">[cari prosesi təsvir et]</span>
+
+To-be: <span class="ph">[hədəf prosesi təsvir et]</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kateqoriya 5 -->
+      <div class="prompt-category">
+        <div class="category-header">
+          <span class="category-number">05</span>
+          <h3 class="category-title">Stakeholder və risk analizi</h3>
+        </div>
+        <p class="category-desc">Stakeholderləri təsnifləşdirmək və layihə risklərini erkən müəyyən etmək üçün.</p>
+
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span class="prompt-title">RACI matrisi qur</span>
+            <span class="prompt-actions">
+              <button class="copy-btn" type="button">📋 Kopyala</button>
+              <span class="prompt-chevron">▼</span>
+            </span>
+          </div>
+          <div class="prompt-collapse">
+            <p class="prompt-text">Bu layihənin stakeholder-lərini və əsas tapşırıqları RACI matrisində təşkil et (Responsible, Accountable, Consulted, Informed).
+
+Cədvəl formatında ver: sətrlərdə tapşırıqlar, sütunlarda stakeholderlər. Hər xanada R/A/C/I-dən biri olsun. Hər tapşırıq üçün yalnız 1 «Accountable» olduğuna əmin ol.
+
+Stakeholderlər: <span class="ph">[siyahı]</span>
+Əsas tapşırıqlar/fazalar: <span class="ph">[siyahı]</span></p>
+          </div>
+        </div>
+
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span class="prompt-title">Stakeholder təsir/maraq matrisi</span>
+            <span class="prompt-actions">
+              <button class="copy-btn" type="button">📋 Kopyala</button>
+              <span class="prompt-chevron">▼</span>
+            </span>
+          </div>
+          <div class="prompt-collapse">
+            <p class="prompt-text">Aşağıdakı stakeholderləri Power/Interest (Təsir/Maraq) matrisi üzrə təsnifləşdir. Hər birini 4 kvadrantdan birinə yerləşdir:
+
+- Yüksək təsir + Yüksək maraq: Manage Closely
+- Yüksək təsir + Aşağı maraq: Keep Satisfied
+- Aşağı təsir + Yüksək maraq: Keep Informed
+- Aşağı təsir + Aşağı maraq: Monitor
+
+Hər biri üçün məqsədəuyğun ünsiyyət strategiyası təklif et.
+
+Stakeholderlər: <span class="ph">[siyahı və qısa təsvir]</span></p>
+          </div>
+        </div>
+
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span class="prompt-title">Layihə risklərinin identifikasiyası</span>
+            <span class="prompt-actions">
+              <button class="copy-btn" type="button">📋 Kopyala</button>
+              <span class="prompt-chevron">▼</span>
+            </span>
+          </div>
+          <div class="prompt-collapse">
+            <p class="prompt-text">Mən aşağıdakı IT layihəsi üzərində işləyirəm: <span class="ph">[layihəni təsvir et]</span>.
+
+15 potensial risk müəyyən et və risk reyestri formatında cədvəl qur:
+
+| ID | Risk | Kateqoriya (Texniki/Biznes/Resurs/Xarici) | Ehtimal (1–5) | Təsir (1–5) | Bal | Mitigation strategiyası |
+
+Sonda Bal ≥ 12 olan riskləri ayrıca xülasə et və hansı erkən siqnalları izləməli olduğumu göstər.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kateqoriya 6 -->
+      <div class="prompt-category">
+        <div class="category-header">
+          <span class="category-number">06</span>
+          <h3 class="category-title">Test və validasiya</h3>
+        </div>
+        <p class="category-desc">Test ssenariləri və UAT planı hazırlamaq üçün.</p>
+
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span class="prompt-title">Test ssenariləri yarat</span>
+            <span class="prompt-actions">
+              <button class="copy-btn" type="button">📋 Kopyala</button>
+              <span class="prompt-chevron">▼</span>
+            </span>
+          </div>
+          <div class="prompt-collapse">
+            <p class="prompt-text">Aşağıdakı user story üçün hərtərəfli test ssenariləri hazırla:
+
+1. Pozitiv test case-lər (happy path)
+2. Neqativ test case-lər (səhv giriş, sərhəd halları)
+3. Edge case-lər
+4. Performans və təhlükəsizlik baxımından yoxlanılmalı nöqtələr
+
+Hər test case üçün: ID, ön şərt, addımlar, gözlənilən nəticə, prioritet.
+
+User story: <span class="ph">[user story-ni yaz]</span></p>
+          </div>
+        </div>
+
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span class="prompt-title">UAT planı hazırla</span>
+            <span class="prompt-actions">
+              <button class="copy-btn" type="button">📋 Kopyala</button>
+              <span class="prompt-chevron">▼</span>
+            </span>
+          </div>
+          <div class="prompt-collapse">
+            <p class="prompt-text">Mənim aşağıdakı tələblərim üçün User Acceptance Testing (UAT) planı hazırla:
+
+Plan içərisində olsun:
+- UAT-ın məqsədi və əhatə dairəsi
+- İştirakçılar və rolları
+- Test mühiti tələbləri
+- Test ssenariləri (yüksək səviyyəli)
+- Daxil olma və çıxış meyarları (entry/exit criteria)
+- Defekt idarəetmə prosesi
+- Cədvəl və müddət
+
+Tələblər: <span class="ph">[tələbləri yaz]</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kateqoriya 7 -->
+      <div class="prompt-category">
+        <div class="category-header">
+          <span class="category-number">07</span>
+          <h3 class="category-title">Karyera və özünüinkişaf</h3>
+        </div>
+        <p class="category-desc">BA müsahibəsinə hazırlaşmaq və bacarıqlarını inkişaf etdirmək üçün.</p>
+
+        <div class="prompt-card">
+          <div class="prompt-head">
+            <span class="prompt-title">BA müsahibəsi üçün hazırlıq</span>
+            <span class="prompt-actions">
+              <button class="copy-btn" type="button">📋 Kopyala</button>
+              <span class="prompt-chevron">▼</span>
+            </span>
+          </div>
+          <div class="prompt-collapse">
+            <p class="prompt-text">Sən bir IT şirkətinin Senior BA mövqeyi üçün müsahibə götürən hiring manager-sən. Mən isə <span class="ph">[junior/mid/senior]</span> səviyyəsində BA namizədəm.
+
+Mənə real müsahibədə veriləcək 10 sual ver — qarışıq:
+- Texniki BA sualları (requirements, BPMN, agile)
+- Davranış sualları (STAR formatına uyğun)
+- Case study tipli ssenari sualı
+
+Mən hər suala cavab yazacam, sən isə cavabı qiymətləndir və necə yaxşılaşdıracağımı göstər.
+
+Sahə: <span class="ph">[fintech/e-commerce/banking/və s.]</span></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ TƏHLÜKƏSİZLİK ============ -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="alert-warning">
+        <div class="alert-icon">⚠️</div>
+        <div>
+          <h3>Vacib: peşəkar məxfilik və data təhlükəsizliyi</h3>
+          <p>AI alətlərini BA işində istifadə edərkən şirkətin və müştərinin məlumatlarını qorumaq sənin peşəkar məsuliyyətindir. Aşağıdakı qaydalara mütləq əməl et:</p>
+          <ul>
+            <li>NDA altında olan sənədlərin tam mətnini AI-a yapışdırma — anonimləşdir və ya yalnız zəruri hissəni göndər.</li>
+            <li>Real müştəri adlarını, e-mail ünvanlarını, maliyyə rəqəmlərini sintetik datalarla əvəz et.</li>
+            <li>Şirkətin daxili siyasətini yoxla — bəzi təşkilatlarda korporativ AI istifadəsi üçün xüsusi platforma (Enterprise versiya) tələb olunur.</li>
+            <li>Sağlamlıq, maliyyə və hökumət sektorlarında əlavə tənzimləyici tələblər var (GDPR, HIPAA və s.) — bunları gözardı etmə.</li>
+          </ul>
+          <p>Yaxşı qayda: əgər həmin məlumatı şirkətdən kənar bir konsultanta e-mailə yaza bilməzsənsə, AI-a da yazma.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRO MƏSLƏHƏTLƏR ============ -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Promptlarını gücləndirən 8 texnika</h2>
+      <p class="section-subtitle">Bu texnikalar adi promptu peşəkar nəticəyə çevirir.</p>
+
+      <div class="grid grid-2">
+        <div class="tip-card">
+          <div class="tip-num">01 · İterasiya</div>
+          <h4>İlk cavabı qəbul etmə</h4>
+          <p>Birinci cavab nadir hallarda ən yaxşısıdır. «Bunu daha qısa et», «daha texniki yaz», «5 alternativ təklif et» — dialoqu davam etdir.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-num">02 · Nümunə</div>
+          <h4>Few-shot prompting</h4>
+          <p>AI-a 2–3 nümunə ver: «Mənim istədiyim format budur: [nümunə 1], [nümunə 2]. İndi bunu [yeni input] üçün yarat.»</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-num">03 · Tənqid</div>
+          <h4>AI-a özünü yoxlatmaq</h4>
+          <p>Cavab aldıqdan sonra: «İndi bu cavabı tənqidi qiymətləndir — zəif yerlər və ya itirdiyin perspektivlər nədir?»</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-num">04 · Dil</div>
+          <h4>Azərbaycanca soruş, terminləri orijinal saxla</h4>
+          <p>BA terminologiyası ingilis dilində daha dəqiqdir. Sualını Azərbaycanca yaz, amma «user story», «epic», «acceptance criteria» kimi terminləri orijinal saxla.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-num">05 · Konstruktiv</div>
+          <h4>Nəyi istəmədiyini də de</h4>
+          <p>«Cavab generic olmasın», «buzzword istifadə etmə», «5 cümlədən uzun olmasın» — limitlər keyfiyyəti artırır.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-num">06 · Düşünmə</div>
+          <h4>Addım-addım düşünməyi xahiş et</h4>
+          <p>Mürəkkəb tapşırıqda «Cavab verməzdən əvvəl addım-addım düşün və hər addımı göstər» yazsan, dəqiqlik artır.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-num">07 · Kitabxana</div>
+          <h4>Öz prompt kitabxananı qur</h4>
+          <p>İşlədikcə yaxşı işləyən promptları Notion və ya Obsidian-da topla. 6 ay sonra bu sənin əsas üstünlüyün olacaq.</p>
+        </div>
+        <div class="tip-card">
+          <div class="tip-num">08 · Doğrulama</div>
+          <h4>Heç vaxt kor-koranə güvənmə</h4>
+          <p>AI səhv edir, «hallüsinasiya» edir. Texniki faktları, hüquqi məsələləri və biznes rəqəmlərini həmişə müstəqil mənbədə yoxla.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="cta-band">
+        <h2>Promptları işində sınamağa hazırsan?</h2>
+        <p>Yuxarıdakı promptları kopyala, layihənə uyğunlaşdır və AI-ı özünə əsl köməkçi et.</p>
+        <a href="sablonlar.html" class="btn">Şablonlara bax</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">BA Akademiya</div>
+          <p>Azərbaycan dilində biznes analitiklər üçün pulsuz təhsil platforması.</p>
+        </div>
+        <div>
+          <h4>Öyrənmə</h4>
+          <ul>
+            <li><a href="oyren.html">Öyrən</a></li>
+            <li><a href="prompt-engineering.html">Prompt Engineering</a></li>
+            <li><a href="sablonlar.html">Şablonlar</a></li>
+            <li><a href="terminler.html">Terminlər</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Saytda</h4>
+          <ul>
+            <li><a href="bloq.html">Bloq</a></li>
+            <li><a href="icma.html">İcma</a></li>
+            <li><a href="haqqimizda.html">Haqqımızda</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Əlaqə</h4>
+          <ul>
+            <li><a href="icma.html">İcmaya qoşul</a></li>
+            <li><a href="haqqimizda.html">Bizimlə əlaqə</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 BA Akademiya. Bütün hüquqlar qorunur. Sevgi ilə hazırlanıb 🇦🇿</div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

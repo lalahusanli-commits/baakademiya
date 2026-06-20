@@ -13,7 +13,7 @@
     gtag('config', 'G-9MJH9BJH31');
   </script>
   <title>IT BA Şablonları | BA Akademiya</title>
-  <meta name="description" content="IT Business Analyst üçün RD, SRS, User Story, Use Case, UAT, Test Case və digər praktik şablonlar.">
+  <meta name="description" content="IT Business Analyst üçün RD, SRS, BRD, FRD, User Story, Use Case, stakeholder və proses analizi, texniki analiz şablonları.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -45,8 +45,9 @@
       <h1>Şablonlar</h1>
       <p>
         Bu şablonlar yeni başlayan və orta səviyyəli IT Biznes Analitiklər üçün hazırlanıb.
-        Tələbləri, user story-ləri, use case-ləri, UAT, test və analiz işini strukturlu şəkildə
-        sənədləşdirmək üçün hazır forma kimi istifadə et: aç, kopyala, öz layihənə uyğunlaşdır.
+        Tələblərin sənədləşdirilməsi, user story və use case-lərin yazılması, stakeholder və proses
+        analizi, texniki analiz və dəyişikliklərin strukturlaşdırılması üçün hazır forma kimi
+        istifadə edilə bilər.
       </p>
       <div class="hero-buttons">
         <a href="index.html" class="btn btn-outline">← Ana səhifə</a>
@@ -64,7 +65,6 @@
         <button class="tpl-filter" data-filter="req">Tələblər</button>
         <button class="tpl-filter" data-filter="analiz">Analiz</button>
         <button class="tpl-filter" data-filter="us">User Story &amp; Use Case</button>
-        <button class="tpl-filter" data-filter="test">Test &amp; UAT</button>
         <button class="tpl-filter" data-filter="comm">Meeting &amp; Communication</button>
       </div>
 
@@ -678,178 +678,6 @@ Nəticə:
 2. Kart məlumatını daxil edir.
 3. Sistem ödənişi təsdiqləyir.
 Nəticə: Sifariş yaradılır, Aysel email ilə çek alır.</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- 11. Test Case -->
-      <article class="prompt-card tpl-card" data-cat="test">
-        <div class="prompt-head">
-          <div class="tpl-head-main">
-            <div class="tpl-name-row">
-              <h3 class="tpl-name">Test Case Şablonu</h3>
-              <span class="tpl-level tpl-level-orta">Orta</span>
-            </div>
-            <p class="tpl-short">Bir funksiyanı yoxlamaq üçün addımlar, giriş və gözlənilən nəticə.</p>
-            <p class="tpl-when"><strong>Nə vaxt:</strong> Funksiyanın düzgün işlədiyini sistemli şəkildə yoxlayanda (UAT daxil).</p>
-          </div>
-          <div class="prompt-actions tpl-actions">
-            <button class="copy-btn">📋 Kopyala</button>
-            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
-          </div>
-        </div>
-        <div class="prompt-collapse">
-          <div class="tpl-detail">
-            <h4>Məqsəd</h4>
-            <p>Hər funksiyanı eyni qaydada, təkrarlana bilən şəkildə yoxlamaq və nəticəni qeyd etmək.</p>
-            <h4>Əsas bölmələr</h4>
-            <ul>
-              <li>Test ID, başlıq, ilkin şərt</li>
-              <li>Addımlar, giriş məlumatı</li>
-              <li>Gözlənilən və faktiki nəticə, status</li>
-            </ul>
-            <h4>Hazır şablon</h4>
-<pre class="prompt-text">TEST CASE
-
-- Test ID:
-- Başlıq:
-- Əlaqəli tələb / user story:
-- İlkin şərt (Precondition):
-- Test məlumatı (giriş):
-
-Addımlar:
-   1.
-   2.
-   3.
-
-- Gözlənilən nəticə:
-- Faktiki nəticə:
-- Status: Keçdi / Keçmədi (Pass / Fail)
-- Qeyd:</pre>
-            <h4>Nümunə</h4>
-            <div class="tpl-example">Test ID: TC-01 — Başlıq: Boş email ilə qeydiyyat.
-Addım: Email sahəsini boş saxla → «Qeydiyyat» düyməsini bas.
-Gözlənilən nəticə: «Email mütləqdir» xəta mesajı görünür. Status: Keçdi.</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- 12. UAT Plan -->
-      <article class="prompt-card tpl-card" data-cat="test">
-        <div class="prompt-head">
-          <div class="tpl-head-main">
-            <div class="tpl-name-row">
-              <h3 class="tpl-name">UAT Plan (İstifadəçi qəbul testi planı)</h3>
-              <span class="tpl-level tpl-level-praktiki">Praktiki</span>
-            </div>
-            <p class="tpl-short">Real istifadəçilərin sistemi təhvildən əvvəl necə yoxlayacağını planlayır.</p>
-            <p class="tpl-when"><strong>Nə vaxt:</strong> Sistem hazır olub məhsulun istifadəçilər tərəfindən təsdiqlənməsi mərhələsində.</p>
-          </div>
-          <div class="prompt-actions tpl-actions">
-            <button class="copy-btn">📋 Kopyala</button>
-            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
-          </div>
-        </div>
-        <div class="prompt-collapse">
-          <div class="tpl-detail">
-            <h4>Məqsəd</h4>
-            <p>UAT-ın əhatə dairəsini, iştirakçılarını, ssenarilərini və qəbul şərtlərini əvvəlcədən razılaşdırmaq.</p>
-            <h4>Əsas bölmələr</h4>
-            <ul>
-              <li>Məqsəd və əhatə dairəsi</li>
-              <li>İştirakçılar və rollar</li>
-              <li>Test ssenariləri və cədvəl</li>
-              <li>Giriş/çıxış meyarları, defekt idarəetməsi</li>
-            </ul>
-            <h4>Hazır şablon</h4>
-<pre class="prompt-text">UAT PLANI
-
-1. Məqsəd:
-2. Əhatə dairəsi (nə test olunur / olunmur):
-
-3. İştirakçılar
-   - Biznes istifadəçiləri:
-   - IT BA / koordinator:
-   - Dəstək (developer / QA):
-
-4. Cədvəl
-   - Başlama / bitmə tarixi:
-   - Mühit (test/staging):
-
-5. Giriş meyarları (UAT başlaya bilər, əgər):
-   - Funksiyalar hazırdır
-   - Test məlumatı mövcuddur
-
-6. Test ssenariləri
-   - SSN-01:
-   - SSN-02:
-
-7. Defekt idarəetməsi
-   - Səhvlər harada qeyd olunur:
-   - Prioritet səviyyələri:
-
-8. Çıxış meyarları (UAT bitmiş sayılır, əgər):
-   - Kritik defekt qalmayıb
-   - Biznes təsdiqi alınıb
-
-9. Təsdiq (Sign-off)
-   - Ad / Rol / Tarix:</pre>
-            <h4>Nümunə</h4>
-            <div class="tpl-example">SSN-01: Müştəri şəxsi kabinetə daxil olub aktiv müqavilələrini görür.
-Çıxış meyarı: Bütün kritik ssenarilər «Keçdi» statusludur və biznes nümayəndəsi imzalayıb.</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- 13. Defect / Bug Report -->
-      <article class="prompt-card tpl-card" data-cat="test">
-        <div class="prompt-head">
-          <div class="tpl-head-main">
-            <div class="tpl-name-row">
-              <h3 class="tpl-name">Defect / Bug Report (Səhv hesabatı)</h3>
-              <span class="tpl-level tpl-level-baslangic">Başlanğıc</span>
-            </div>
-            <p class="tpl-short">Tapılan səhvi developerin təkrarlaya biləcəyi şəkildə qeyd edir.</p>
-            <p class="tpl-when"><strong>Nə vaxt:</strong> Test və ya UAT zamanı gözləniləndən fərqli davranış tapılanda.</p>
-          </div>
-          <div class="prompt-actions tpl-actions">
-            <button class="copy-btn">📋 Kopyala</button>
-            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
-          </div>
-        </div>
-        <div class="prompt-collapse">
-          <div class="tpl-detail">
-            <h4>Məqsəd</h4>
-            <p>Səhvi aydın və təkrarlana bilən şəkildə təsvir etmək ki, developer onu tez tapıb düzəltsin.</p>
-            <h4>Əsas bölmələr</h4>
-            <ul>
-              <li>Başlıq, prioritet, ciddiyyət</li>
-              <li>Təkrarlama addımları</li>
-              <li>Gözlənilən vs faktiki nəticə, mühit</li>
-            </ul>
-            <h4>Hazır şablon</h4>
-<pre class="prompt-text">BUG REPORT
-
-- Bug ID:
-- Başlıq (qısa təsvir):
-- Tapan şəxs / tarix:
-- Ciddiyyət (Severity): Kritik / Yüksək / Orta / Aşağı
-- Prioritet (Priority): Yüksək / Orta / Aşağı
-- Mühit (brauzer / cihaz / versiya):
-
-Təkrarlama addımları:
-   1.
-   2.
-   3.
-
-- Gözlənilən nəticə:
-- Faktiki nəticə:
-- Əlavə (screenshot / log):
-- Status: Yeni / Təsdiqləndi / Düzəldildi / Bağlandı</pre>
-            <h4>Nümunə</h4>
-            <div class="tpl-example">Başlıq: «Şifrəni bərpa et» düyməsi işləmir.
-Addımlar: 1. Login səhifəsini aç → 2. «Şifrəni unutdum»a bas.
-Gözlənilən: Email forması açılır. Faktiki: Səhifə boş qalır. Severity: Yüksək.</div>
           </div>
         </div>
       </article>

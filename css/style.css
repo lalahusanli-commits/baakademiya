@@ -1133,3 +1133,275 @@ h3 { font-size: 1.25rem; }
   .footer-grid { grid-template-columns: 1fr; }
   body { font-size: 16px; }
 }
+
+/* =========================================================
+   16. ŞABLONLAR (IT BA hazır şablonları)
+   Filtr düymələri + genişlənən (accordion) şablon kartları.
+   Mövcud .prompt-card / .copy-btn / .prompt-text davranışını
+   təkrar istifadə edir — bu bölmə yalnız əlavə stillərdir.
+   ========================================================= */
+
+/* ---- Kateqoriya filtr düymələri ---- */
+.tpl-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto 36px;
+  max-width: 860px;
+}
+
+.tpl-filter {
+  font-family: var(--font-base);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  padding: 9px 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tpl-filter:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.tpl-filter.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+/* Səviyyə izahı (subtil köməkçi mətn) */
+.tpl-levels-help {
+  max-width: 760px;
+  margin: -18px auto 32px;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 2.1;
+  color: var(--color-text-muted);
+}
+
+.tpl-levels-help strong {
+  color: var(--color-heading);
+}
+
+.tpl-levels-help .tpl-level {
+  margin: 0 2px;
+}
+
+/* "Nəticə tapılmadı" mesajı (filtr) */
+.tpl-noresult {
+  display: none;
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: 30px 0 10px;
+}
+
+/* ---- Şablon kartı (accordion) ---- */
+/* .prompt-card davranışını miras alır; aşağıdakılar yalnız görünüş əlavələridir */
+.tpl-card .prompt-head {
+  align-items: flex-start;
+}
+
+.tpl-head-main {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.tpl-name-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tpl-name {
+  font-weight: 700;
+  font-size: 1.08rem;
+  color: var(--color-heading);
+  margin: 0;
+}
+
+/* Çətinlik səviyyəsi nişanı */
+.tpl-level {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 11px;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+.tpl-level-baslangic { color: #15803d; background: #dcfce7; }
+.tpl-level-orta      { color: #1d4ed8; background: var(--color-primary-light); }
+.tpl-level-praktiki  { color: #92400e; background: #fef3c7; }
+
+/* Kart badge-lərində məna aydın olsun deyə "Səviyyə:" prefiksi əlavə edilir.
+   (Yuxarıdakı izah lentindəki badge-lər .tpl-card daxilində olmadığı üçün
+   sadəcə "Başlanğıc / Orta / Praktiki" kimi qalır.) */
+.tpl-card .tpl-level::before {
+  content: "Səviyyə: ";
+}
+
+.tpl-short {
+  color: var(--color-text-muted);
+  font-size: 0.93rem;
+  margin: 2px 0 0;
+}
+
+.tpl-when {
+  font-size: 0.88rem;
+  color: var(--color-text);
+  margin: 2px 0 0;
+}
+
+.tpl-when strong { color: var(--color-heading); }
+
+/* Sağ tərəf — kopyala düyməsi + "Şablona bax" toggle */
+.tpl-actions {
+  align-self: center;
+}
+
+.tpl-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+/* Açılan detal hissəsi */
+.tpl-detail {
+  padding: 4px 20px 20px;
+}
+
+.tpl-detail h4 {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-accent);
+  margin: 18px 0 6px;
+}
+
+.tpl-detail p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.tpl-detail ul {
+  margin: 6px 0 0;
+  padding-left: 20px;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.tpl-detail li { margin-bottom: 4px; }
+
+/* Kopyalana bilən şablon gövdəsi (mövcud .prompt-text üzərində qurulur) */
+.tpl-card .prompt-text {
+  margin-top: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+/* Nümunə qutusu */
+.tpl-example {
+  margin-top: 14px;
+  background: var(--color-bg-soft);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+/* ---- Render olunmuş şablon gövdəsi (mətn blokları + HTML cədvəllər) ---- */
+/* Gizli Markdown mənbəyi — yalnız "Kopyala" üçün saxlanılır */
+.tpl-md-source {
+  display: none;
+}
+
+.tpl-rendered {
+  margin-top: 8px;
+}
+
+/* Cədvəl olmayan mətn hissələri (sadə, oxunaqlı preformatlı mətn) */
+.tpl-text-block {
+  margin: 0 0 12px;
+  font-family: var(--font-base);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Geniş cədvəllər üçün sürüşdürmə məsləhəti (subtil) */
+.tpl-scroll-hint {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin: 0 0 6px;
+}
+
+/* Responsiv cədvəl konteyneri — dar ekranda üfüqi sürüşmə */
+.tpl-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 0 0 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-bg);
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Vizual cədvəl */
+.tpl-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.tpl-table th,
+.tpl-table td {
+  border: 1px solid var(--color-border);
+  padding: 9px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tpl-table thead th {
+  background: var(--color-bg-soft);
+  color: var(--color-heading);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Yüngül zebra — oxunaqlılıq üçün */
+.tpl-table tbody tr:nth-child(even) td {
+  background: var(--color-bg-soft);
+}
+
+/* Uzun şablonların tam açılması üçün max-height-ı artırırıq
+   (mövcud .prompt-card.open qaydasını eyni spesifikliklə üstələyir) */
+.tpl-card.open .prompt-collapse {
+  max-height: 16000px;
+}
+
+@media (max-width: 768px) {
+  .tpl-card .prompt-head { flex-direction: column; gap: 12px; }
+  .tpl-actions { align-self: flex-start; }
+}

@@ -12,8 +12,8 @@
     gtag('js', new Date());
     gtag('config', 'G-9MJH9BJH31');
   </script>
-  <title>Şablonlar — IT BA & AI Excellence Hub</title>
-  <meta name="description" content="BRD, SRS, user story, use case və digər hazır IT BA şablonları.">
+  <title>IT BA Şablonları | BA Akademiya</title>
+  <meta name="description" content="IT Business Analyst üçün RD, SRS, User Story, Use Case, UAT, Test Case və digər praktik şablonlar.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -38,27 +38,1381 @@
     </div>
   </header>
 
+  <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="container">
       <span class="badge">📄 Şablonlar</span>
       <h1>Şablonlar</h1>
-      <p>BRD, SRS, user story, use case və digər hazır IT BA şablonları.</p>
+      <p>
+        Bu şablonlar yeni başlayan və orta səviyyəli IT Biznes Analitiklər üçün hazırlanıb.
+        Tələbləri, user story-ləri, use case-ləri, UAT, test və analiz işini strukturlu şəkildə
+        sənədləşdirmək üçün hazır forma kimi istifadə et: aç, kopyala, öz layihənə uyğunlaşdır.
+      </p>
       <div class="hero-buttons">
         <a href="index.html" class="btn btn-outline">← Ana səhifə</a>
       </div>
     </div>
   </section>
 
+  <!-- ============ FİLTR + ŞABLONLAR ============ -->
   <section class="section">
-    <div class="container" style="text-align:center;">
-      <div class="card" style="max-width:560px;margin:0 auto;">
-        <div class="card-icon" style="margin:0 auto 18px;">🚧</div>
-        <h3>Bu səhifə hazırlanır</h3>
-        <p>Tezliklə burada zəngin məzmun olacaq. İzləməkdə davam et!</p>
+    <div class="container">
+
+      <!-- Kateqoriya filtrləri -->
+      <div class="tpl-filters">
+        <button class="tpl-filter active" data-filter="all">Bütün şablonlar</button>
+        <button class="tpl-filter" data-filter="req">Tələblər</button>
+        <button class="tpl-filter" data-filter="analiz">Analiz</button>
+        <button class="tpl-filter" data-filter="us">User Story &amp; Use Case</button>
+        <button class="tpl-filter" data-filter="test">Test &amp; UAT</button>
+        <button class="tpl-filter" data-filter="comm">Meeting &amp; Communication</button>
       </div>
+
+      <!-- Səviyyə izahı (subtil) -->
+      <p class="tpl-levels-help">
+        <strong>Şablon səviyyələri:</strong>
+        <span class="tpl-level tpl-level-baslangic">Başlanğıc</span> – yeni başlayanlar üçün sadə şablon;
+        <span class="tpl-level tpl-level-orta">Orta</span> – daha detallı analiz tələb edən şablon;
+        <span class="tpl-level tpl-level-praktiki">Praktiki</span> – real layihələrdə istifadə üçün genişləndirilmiş şablon.
+      </p>
+
+      <p class="tpl-noresult">Bu kateqoriyada şablon tapılmadı.</p>
+
+      <!-- ===================== ŞABLON KARTLARI ===================== -->
+
+      <!-- 1. RD -->
+      <article class="prompt-card tpl-card" data-cat="req">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">RD — Requirement Document (Tələblər sənədi)</h3>
+              <span class="tpl-level tpl-level-orta">Orta</span>
+            </div>
+            <p class="tpl-short">Layihənin bütün tələblərini bir yerdə toplayan ümumi tələblər sənədi.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Layihənin əvvəlində tələbləri rəsmi şəkildə yazıb komandaya təqdim edəndə.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Biznes, funksional və qeyri-funksional tələbləri tək sənəddə toplayıb bütün tərəflərin eyni anlayışa gəlməsini təmin etmək.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Sənəd məlumatı və status</li>
+              <li>Məqsəd və əhatə dairəsi (scope)</li>
+              <li>Maraqlı tərəflər</li>
+              <li>Biznes / funksional / qeyri-funksional tələblər</li>
+              <li>Fərziyyələr, məhdudiyyətlər, açıq suallar</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">TƏLƏBLƏR SƏNƏDİ (RD)
+
+1. Sənəd haqqında
+   - Layihə adı:
+   - Versiya:
+   - Tarix:
+   - Müəllif (IT BA):
+   - Status: Qaralama / Təsdiq gözləyir / Təsdiqlənib
+
+2. Məqsəd
+   - Bu sənəd nə üçün hazırlanıb:
+   - Həll olunan problem:
+
+3. Əhatə dairəsi (Scope)
+   - Daxildir:
+   - Daxil deyil:
+
+4. Maraqlı tərəflər (Stakeholders)
+   - Ad / Rol / Məsuliyyət:
+
+5. Biznes tələbləri
+   - BT-01:
+   - BT-02:
+
+6. Funksional tələblər
+   - FT-01:
+   - FT-02:
+
+7. Qeyri-funksional tələblər
+   - QFT-01 (performans / təhlükəsizlik / əlçatanlıq):
+
+8. Fərziyyələr və məhdudiyyətlər
+   -
+
+9. Asılılıqlar (digər sistem / komanda)
+   -
+
+10. Açıq suallar
+   -</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">FT-01: Sistem istifadəçiyə şifrəni email vasitəsilə bərpa etmək imkanı verməlidir.
+QFT-01: Əsas səhifə 2 saniyədən az müddətdə açılmalıdır.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. BRD -->
+      <article class="prompt-card tpl-card" data-cat="req">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">BRD — Business Requirements Document</h3>
+              <span class="tpl-level tpl-level-orta">Orta</span>
+            </div>
+            <p class="tpl-short">Layihənin <em>niyə</em> görüldüyünü izah edən biznes tələbləri sənədi.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Layihə başlamazdan əvvəl biznes məqsədini və gözlənilən faydanı rəhbərliyə təsdiqlətmək üçün.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Biznesin nəyə nail olmaq istədiyini yüksək səviyyədə təsvir etmək. Texniki həlli yox, biznes ehtiyacını izah edir.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Biznes problemi və məqsəd</li>
+              <li>Uğur meyarları (KPI)</li>
+              <li>Əhatə dairəsi və biznes tələbləri</li>
+              <li>Risklər və fərziyyələr</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">BİZNES TƏLƏBLƏRİ SƏNƏDİ (BRD)
+
+1. Xülasə (Executive Summary)
+   - Layihənin bir cümlə ilə izahı:
+
+2. Biznes problemi / imkanı
+   - Hazırkı vəziyyət:
+   - Problem:
+
+3. Biznes məqsədləri
+   - Məqsəd 1:
+   - Məqsəd 2:
+
+4. Uğur meyarları (KPI)
+   - Məs: 6 ayda onlayn satışı 20% artırmaq
+
+5. Əhatə dairəsi
+   - Daxildir:
+   - Daxil deyil:
+
+6. Biznes tələbləri
+   - BT-01:
+   - BT-02:
+
+7. Maraqlı tərəflər
+   -
+
+8. Fərziyyələr və risklər
+   -</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">Biznes məqsədi: Müştərilərin filiala getmədən müqavilələrini onlayn görməsini təmin etmək.
+Uğur meyarı: Filiala zənglərin sayını 3 ayda 30% azaltmaq.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. SRS -->
+      <article class="prompt-card tpl-card" data-cat="req">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">SRS — Software Requirements Specification</h3>
+              <span class="tpl-level tpl-level-praktiki">Praktiki</span>
+            </div>
+            <p class="tpl-short">Sistemin necə işləməli olduğunu detallı təsvir edən texniki tələblər sənədi.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Komanda işə başlamazdan əvvəl, funksional və qeyri-funksional tələbləri dəqiq sənədləşdirəndə.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>İnkişaf və test komandasının eyni anlayışla işləməsi üçün sistemin bütün funksional və qeyri-funksional tələblərini dəqiq müəyyən etmək.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Giriş, məqsəd, əhatə dairəsi</li>
+              <li>Ümumi təsvir (istifadəçilər, mühit)</li>
+              <li>Funksional tələblər</li>
+              <li>Qeyri-funksional tələblər</li>
+              <li>İnterfeys və inteqrasiya tələbləri</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">PROQRAM TƏLƏBLƏRİ SPESİFİKASİYASI (SRS)
+
+1. Giriş
+   1.1 Məqsəd:
+   1.2 Əhatə dairəsi:
+   1.3 Terminlər və qısaltmalar:
+
+2. Ümumi təsvir
+   2.1 Məhsulun ümumi mənzərəsi:
+   2.2 İstifadəçi rolları:
+   2.3 İş mühiti (brauzer / OS / cihaz):
+   2.4 Fərziyyələr və asılılıqlar:
+
+3. Funksional tələblər
+   FT-01:
+     - Təsvir:
+     - Giriş:
+     - İşlənmə:
+     - Çıxış / nəticə:
+   FT-02:
+
+4. Qeyri-funksional tələblər
+   - Performans:
+   - Təhlükəsizlik:
+   - Əlçatanlıq (availability):
+   - İstifadə rahatlığı (usability):
+
+5. İnterfeys tələbləri
+   - İstifadəçi interfeysi:
+   - API / inteqrasiya:
+
+6. Açıq suallar / qeydlər
+   -</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">FT-02 — Giriş: İstifadəçi email və şifrə daxil edir.
+İşlənmə: Sistem məlumatları yoxlayır.
+Çıxış: Düzgündürsə şəxsi kabinetə yönləndirir, yanlışdırsa xəta mesajı göstərir.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. FRD -->
+      <article class="prompt-card tpl-card" data-cat="req">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">FRD — Functional Requirements Document</h3>
+              <span class="tpl-level tpl-level-orta">Orta</span>
+            </div>
+            <p class="tpl-short">Sistemin <em>nə</em> etməli olduğunu funksiya-funksiya təsvir edən sənəd.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> BRD-dəki biznes tələblərini konkret funksiyalara çevirəndə.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Hər biznes tələbinin sistemdə hansı konkret funksiya ilə qarşılanacağını aydın göstərmək.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Funksiya kodu və adı</li>
+              <li>Təsvir, aktyor, ilkin şərt</li>
+              <li>Addımlar və qaydalar</li>
+              <li>Əlaqəli biznes tələbi</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">FUNKSİONAL TƏLƏBLƏR SƏNƏDİ (FRD)
+
+Funksiya: FT-01
+- Funksiyanın adı:
+- Təsvir (sistem nə edir):
+- Aktyor (kim istifadə edir):
+- İlkin şərt (precondition):
+- Addımlar:
+   1.
+   2.
+- Biznes qaydaları:
+   -
+- Gözlənilən nəticə:
+- Əlaqəli biznes tələbi: BT-..
+
+Funksiya: FT-02
+- ...</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">FT-01 — Adı: Müqavilə siyahısı.
+Aktyor: Müştəri. İlkin şərt: Müştəri sistemə daxil olub.
+Nəticə: Sistem müştərinin aktiv müqavilələrini siyahı şəklində göstərir.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5. Non-Functional Requirements -->
+      <article class="prompt-card tpl-card" data-cat="req">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">Non-Functional Requirements (Qeyri-funksional tələblər)</h3>
+              <span class="tpl-level tpl-level-orta">Orta</span>
+            </div>
+            <p class="tpl-short">Sistemin <em>necə</em> işləməli olduğunu — sürət, təhlükəsizlik, etibarlılıq — təsvir edir.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Funksional tələblərlə yanaşı keyfiyyət gözləntilərini yazanda.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Sistemin keyfiyyət xüsusiyyətlərini ölçülə bilən şəkildə müəyyən etmək (yəni «sürətli olsun» yox, «2 saniyədən az açılsın»).</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Performans, təhlükəsizlik, əlçatanlıq</li>
+              <li>İstifadə rahatlığı, uyğunluq, miqyaslana bilmə</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">QEYRİ-FUNKSİONAL TƏLƏBLƏR
+
+QFT-01 Performans:
+   - Səhifə açılma vaxtı:
+   - Eyni anda istifadəçi sayı:
+
+QFT-02 Təhlükəsizlik:
+   - Autentifikasiya / giriş qaydaları:
+   - Məlumatın şifrələnməsi:
+
+QFT-03 Əlçatanlıq (Availability):
+   - İş vaxtı (uptime), məs: 99.5%
+
+QFT-04 İstifadə rahatlığı (Usability):
+   - Dil / əlçatanlıq tələbləri:
+
+QFT-05 Uyğunluq (Compatibility):
+   - Dəstəklənən brauzer / cihaz:
+
+QFT-06 Miqyaslana bilmə (Scalability):
+   - Yüklənmənin artması ilə davranış:</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">QFT-01: Sistem eyni anda 500 istifadəçini yavaşlamadan dəstəkləməlidir.
+QFT-03: İllik iş vaxtı 99.5%-dən az olmamalıdır.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6. API Requirement -->
+      <article class="prompt-card tpl-card" data-cat="req">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">API Requirement Template</h3>
+              <span class="tpl-level tpl-level-praktiki">Praktiki</span>
+            </div>
+            <p class="tpl-short">İki sistem arasında məlumat mübadiləsi (API) tələbini təsvir edir.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Sistemlərin inteqrasiyası və ya yeni endpoint tələb olunanda.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Developer və inteqrasiya komandasının lazımi API-ni dəqiq başa düşməsi üçün giriş/çıxış məlumatını və qaydaları aydın yazmaq.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Endpoint, metod, məqsəd</li>
+              <li>Giriş (request) və çıxış (response) məlumatı</li>
+              <li>Xəta halları və təhlükəsizlik</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">API TƏLƏBİ
+
+1. Ümumi məlumat
+   - API adı:
+   - Məqsəd (nə üçün lazımdır):
+   - Endpoint (URL):
+   - Metod: GET / POST / PUT / DELETE
+
+2. Giriş (Request)
+   - Parametrlər (ad / tip / məcburidir?):
+   - Nümunə giriş:
+
+3. Çıxış (Response)
+   - Sahələr (ad / tip / izah):
+   - Uğurlu cavab nümunəsi:
+
+4. Xəta halları
+   - Kod / izah (məs: 400 - yanlış məlumat, 401 - giriş yoxdur):
+
+5. Təhlükəsizlik
+   - Autentifikasiya üsulu (token / açar):
+
+6. Qeydlər
+   -</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">Endpoint: /api/contracts — Metod: GET
+Məqsəd: Daxil olmuş müştərinin aktiv müqavilələrini qaytarmaq.
+Çıxış: id, contractNumber, status, startDate.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 7. User Story -->
+      <article class="prompt-card tpl-card" data-cat="us">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">User Story Şablonu</h3>
+              <span class="tpl-level tpl-level-baslangic">Başlanğıc</span>
+            </div>
+            <p class="tpl-short">İstifadəçi ehtiyacını qısa və aydın formada ifadə etmək üçün.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Backlog-a yeni tələb əlavə edəndə və ya sprint planlaşdırmasında.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Bu şablon istifadəçi ehtiyacını qısa və aydın formada ifadə etmək üçün istifadə olunur.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>User story (rol – məqsəd – fayda)</li>
+              <li>Acceptance criteria</li>
+              <li>Biznes qaydaları və qeydlər</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">User Story:
+Bir [rol] olaraq,
+Mən [məqsəd / ehtiyac] istəyirəm,
+Beləliklə [biznes dəyəri / nəticə] əldə edim.
+
+Acceptance Criteria:
+1. GIVEN ...
+   WHEN ...
+   THEN ...
+
+2. GIVEN ...
+   WHEN ...
+   THEN ...
+
+Business Rules:
+- ...
+
+Notes:
+- ...</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">Bir müştəri olaraq,
+Mən şəxsi kabinetdə aktiv sığorta müqavilələrimi görmək istəyirəm,
+Beləliklə müqavilə məlumatlarımı filial ilə əlaqə saxlamadan yoxlaya bilim.
+
+Acceptance Criteria:
+GIVEN müştərinin aktiv müqaviləsi var
+WHEN müştəri şəxsi kabinetə daxil olur
+THEN sistem aktiv müqavilələri siyahıda göstərir.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8. Acceptance Criteria -->
+      <article class="prompt-card tpl-card" data-cat="us">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">Acceptance Criteria (Qəbul meyarları)</h3>
+              <span class="tpl-level tpl-level-baslangic">Başlanğıc</span>
+            </div>
+            <p class="tpl-short">User story-nin «tamamlandı» sayılması üçün lazım olan konkret şərtlər.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Hər user story üçün — developer və tester eyni nəticəni gözləsin deyə.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Funksiyanın hansı şərtlərdə düzgün sayılacağını dəqiqləşdirmək. İki üsul var: Gherkin (Given/When/Then) və ya sadə siyahı.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Hər meyar üçün şərt, hərəkət və nəticə</li>
+              <li>Müsbət və mənfi (xəta) halları</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">ACCEPTANCE CRITERIA
+
+User Story / Funksiya:
+
+Üsul 1 — Gherkin (Given/When/Then):
+AC-01:
+  GIVEN [ilkin vəziyyət]
+  WHEN  [istifadəçi hərəkəti]
+  THEN  [gözlənilən nəticə]
+
+AC-02 (mənfi hal):
+  GIVEN ...
+  WHEN  ...
+  THEN  [xəta mesajı / blok]
+
+Üsul 2 — Sadə siyahı (checklist):
+- [ ] Şərt 1
+- [ ] Şərt 2
+- [ ] Xəta halı düzgün idarə olunur</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">AC-01:
+  GIVEN istifadəçi düzgün email və şifrə daxil edib
+  WHEN  «Daxil ol» düyməsini basır
+  THEN  sistem onu şəxsi kabinetə yönləndirir.
+
+AC-02:
+  GIVEN şifrə yanlışdır
+  WHEN  istifadəçi daxil olmağa çalışır
+  THEN  «Email və ya şifrə yanlışdır» mesajı görünür.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 9. Use Case -->
+      <article class="prompt-card tpl-card" data-cat="us">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">Use Case Şablonu</h3>
+              <span class="tpl-level tpl-level-orta">Orta</span>
+            </div>
+            <p class="tpl-short">İstifadəçi ilə sistemin qarşılıqlı əlaqəsini strukturlu təsvir edir.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Bir funksiyanın bütün addımlarını və alternativ halları detallı göstərmək lazım olanda.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Bir məqsədə çatmaq üçün istifadəçi və sistem arasındakı addımları — əsas və alternativ axınları — aydın sənədləşdirmək.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Aktyor, məqsəd, ilkin/son şərt</li>
+              <li>Əsas axın (main flow)</li>
+              <li>Alternativ və xəta axınları</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">USE CASE
+
+- Use Case ID:
+- Ad:
+- Aktyor (kim):
+- Məqsəd:
+- İlkin şərt (Precondition):
+- Son şərt (Postcondition):
+
+Əsas axın (Main Flow):
+   1. Aktyor ...
+   2. Sistem ...
+   3. ...
+
+Alternativ axın (Alternative Flow):
+   A1. Əgər ... olarsa, sistem ...
+
+Xəta axını (Exception Flow):
+   E1. Əgər ... baş verərsə, sistem xəta göstərir.
+
+Biznes qaydaları:
+   -</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">Ad: Kartla ödəniş. Aktyor: Müştəri.
+Əsas axın: 1. Müştəri kart məlumatını daxil edir → 2. Sistem yoxlayır → 3. Ödəniş təsdiqlənir → 4. Çek göndərilir.
+Xəta axını: E1. Balans kifayət deyilsə, sistem «Ödəniş alınmadı» mesajı göstərir.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 10. Use Case Scenario -->
+      <article class="prompt-card tpl-card" data-cat="us">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">Use Case Scenario (Ssenari)</h3>
+              <span class="tpl-level tpl-level-orta">Orta</span>
+            </div>
+            <p class="tpl-short">Use case-in konkret bir halını real məlumatla, hekayə kimi göstərir.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Komanda və ya müştəriyə funksiyanı real nümunə ilə izah edəndə.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Use case-i konkret bir vəziyyətdə, real istifadəçi və məlumatla addım-addım göstərmək. Bir use case-in bir neçə ssenarisi ola bilər (uğurlu, uğursuz).</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Ssenari adı və tipi (uğurlu / uğursuz)</li>
+              <li>Vəziyyət və addımlar</li>
+              <li>Nəticə</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">USE CASE SCENARIO
+
+- Əlaqəli Use Case:
+- Ssenari adı:
+- Tip: Uğurlu / Uğursuz
+- Aktyor:
+- Vəziyyət (kontekst):
+
+Addımlar:
+   1.
+   2.
+   3.
+
+Nəticə:
+   -</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">Ssenari: «Uğurlu ödəniş». Aktyor: Aysel.
+1. Aysel 50 AZN-lik səbəti ilə ödənişə keçir.
+2. Kart məlumatını daxil edir.
+3. Sistem ödənişi təsdiqləyir.
+Nəticə: Sifariş yaradılır, Aysel email ilə çek alır.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 11. Test Case -->
+      <article class="prompt-card tpl-card" data-cat="test">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">Test Case Şablonu</h3>
+              <span class="tpl-level tpl-level-orta">Orta</span>
+            </div>
+            <p class="tpl-short">Bir funksiyanı yoxlamaq üçün addımlar, giriş və gözlənilən nəticə.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Funksiyanın düzgün işlədiyini sistemli şəkildə yoxlayanda (UAT daxil).</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Hər funksiyanı eyni qaydada, təkrarlana bilən şəkildə yoxlamaq və nəticəni qeyd etmək.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Test ID, başlıq, ilkin şərt</li>
+              <li>Addımlar, giriş məlumatı</li>
+              <li>Gözlənilən və faktiki nəticə, status</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">TEST CASE
+
+- Test ID:
+- Başlıq:
+- Əlaqəli tələb / user story:
+- İlkin şərt (Precondition):
+- Test məlumatı (giriş):
+
+Addımlar:
+   1.
+   2.
+   3.
+
+- Gözlənilən nəticə:
+- Faktiki nəticə:
+- Status: Keçdi / Keçmədi (Pass / Fail)
+- Qeyd:</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">Test ID: TC-01 — Başlıq: Boş email ilə qeydiyyat.
+Addım: Email sahəsini boş saxla → «Qeydiyyat» düyməsini bas.
+Gözlənilən nəticə: «Email mütləqdir» xəta mesajı görünür. Status: Keçdi.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 12. UAT Plan -->
+      <article class="prompt-card tpl-card" data-cat="test">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">UAT Plan (İstifadəçi qəbul testi planı)</h3>
+              <span class="tpl-level tpl-level-praktiki">Praktiki</span>
+            </div>
+            <p class="tpl-short">Real istifadəçilərin sistemi təhvildən əvvəl necə yoxlayacağını planlayır.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Sistem hazır olub məhsulun istifadəçilər tərəfindən təsdiqlənməsi mərhələsində.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>UAT-ın əhatə dairəsini, iştirakçılarını, ssenarilərini və qəbul şərtlərini əvvəlcədən razılaşdırmaq.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Məqsəd və əhatə dairəsi</li>
+              <li>İştirakçılar və rollar</li>
+              <li>Test ssenariləri və cədvəl</li>
+              <li>Giriş/çıxış meyarları, defekt idarəetməsi</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">UAT PLANI
+
+1. Məqsəd:
+2. Əhatə dairəsi (nə test olunur / olunmur):
+
+3. İştirakçılar
+   - Biznes istifadəçiləri:
+   - IT BA / koordinator:
+   - Dəstək (developer / QA):
+
+4. Cədvəl
+   - Başlama / bitmə tarixi:
+   - Mühit (test/staging):
+
+5. Giriş meyarları (UAT başlaya bilər, əgər):
+   - Funksiyalar hazırdır
+   - Test məlumatı mövcuddur
+
+6. Test ssenariləri
+   - SSN-01:
+   - SSN-02:
+
+7. Defekt idarəetməsi
+   - Səhvlər harada qeyd olunur:
+   - Prioritet səviyyələri:
+
+8. Çıxış meyarları (UAT bitmiş sayılır, əgər):
+   - Kritik defekt qalmayıb
+   - Biznes təsdiqi alınıb
+
+9. Təsdiq (Sign-off)
+   - Ad / Rol / Tarix:</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">SSN-01: Müştəri şəxsi kabinetə daxil olub aktiv müqavilələrini görür.
+Çıxış meyarı: Bütün kritik ssenarilər «Keçdi» statusludur və biznes nümayəndəsi imzalayıb.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 13. Defect / Bug Report -->
+      <article class="prompt-card tpl-card" data-cat="test">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">Defect / Bug Report (Səhv hesabatı)</h3>
+              <span class="tpl-level tpl-level-baslangic">Başlanğıc</span>
+            </div>
+            <p class="tpl-short">Tapılan səhvi developerin təkrarlaya biləcəyi şəkildə qeyd edir.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Test və ya UAT zamanı gözləniləndən fərqli davranış tapılanda.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Səhvi aydın və təkrarlana bilən şəkildə təsvir etmək ki, developer onu tez tapıb düzəltsin.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Başlıq, prioritet, ciddiyyət</li>
+              <li>Təkrarlama addımları</li>
+              <li>Gözlənilən vs faktiki nəticə, mühit</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">BUG REPORT
+
+- Bug ID:
+- Başlıq (qısa təsvir):
+- Tapan şəxs / tarix:
+- Ciddiyyət (Severity): Kritik / Yüksək / Orta / Aşağı
+- Prioritet (Priority): Yüksək / Orta / Aşağı
+- Mühit (brauzer / cihaz / versiya):
+
+Təkrarlama addımları:
+   1.
+   2.
+   3.
+
+- Gözlənilən nəticə:
+- Faktiki nəticə:
+- Əlavə (screenshot / log):
+- Status: Yeni / Təsdiqləndi / Düzəldildi / Bağlandı</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">Başlıq: «Şifrəni bərpa et» düyməsi işləmir.
+Addımlar: 1. Login səhifəsini aç → 2. «Şifrəni unutdum»a bas.
+Gözlənilən: Email forması açılır. Faktiki: Səhifə boş qalır. Severity: Yüksək.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 14. Process Description -->
+      <article class="prompt-card tpl-card" data-cat="analiz">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">Process Description (Proses təsviri)</h3>
+              <span class="tpl-level tpl-level-orta">Orta</span>
+            </div>
+            <p class="tpl-short">Bir biznes prosesinin addımlarını, rollarını və qaydalarını yazılı təsvir edir.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> As-is (cari) və ya to-be (hədəf) prosesi sənədləşdirəndə.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Prosesin necə işlədiyini hər kəsin başa düşməsi və təkmilləşdirmə imkanlarının görünməsi üçün addım-addım yazmaq.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Proses adı, məqsəd, sahib (owner)</li>
+              <li>Başlanğıc/bitmə hadisəsi (trigger)</li>
+              <li>Addımlar, rollar, qaydalar</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">PROSES TƏSVİRİ
+
+- Proses adı:
+- Tip: As-Is (cari) / To-Be (hədəf)
+- Məqsəd:
+- Proses sahibi (Owner):
+- İştirakçı rollar:
+- Başlanğıc hadisəsi (Trigger):
+- Bitmə nəticəsi:
+
+Addımlar:
+   1. [Rol] — hərəkət
+   2. [Rol] — hərəkət
+   3. ...
+
+Qərar nöqtələri (əgər / o zaman):
+   -
+
+Biznes qaydaları:
+   -
+
+İstifadə olunan sistemlər / sənədlər:
+   -</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">Proses: Məzuniyyət ərizəsi (As-Is).
+1. İşçi ərizəni doldurur. 2. Rəhbər təsdiqləyir/rədd edir. 3. HR sistemə daxil edir.
+Qərar: Rəhbər rədd edərsə, ərizə işçiyə geri qayıdır.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 15. Change Request -->
+      <article class="prompt-card tpl-card" data-cat="analiz">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">Change Request (Dəyişiklik tələbi)</h3>
+              <span class="tpl-level tpl-level-praktiki">Praktiki</span>
+            </div>
+            <p class="tpl-short">Layihə gedişində yaranan dəyişiklik tələbini rəsmiləşdirir.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Razılaşdırılmış scope-a yeni tələb və ya dəyişiklik əlavə olunmalı olanda.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Dəyişikliyi, onun səbəbini və təsirini yazıb qərar verənlərin (CCB) təsdiqi üçün təqdim etmək.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Dəyişikliyin təsviri və səbəbi</li>
+              <li>Təsir (vaxt, büdcə, scope)</li>
+              <li>Qərar və təsdiq</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">DƏYİŞİKLİK TƏLƏBİ (CHANGE REQUEST)
+
+- CR ID:
+- Tələb edən / tarix:
+- Başlıq:
+- Təsvir (nə dəyişməlidir):
+- Səbəb (niyə lazımdır):
+- Prioritet: Yüksək / Orta / Aşağı
+
+Təsir analizi:
+   - Scope-a təsir:
+   - Vaxt cədvəlinə təsir:
+   - Büdcəyə təsir:
+   - Risklər:
+
+Alternativlər:
+   -
+
+Qərar: Təsdiqləndi / Rədd edildi / Gözləyir
+Təsdiq edən / tarix:</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">Başlıq: Ödəniş səhifəsinə Apple Pay əlavə edilməsi.
+Səbəb: Müştəri tələbi. Təsir: +1 sprint, kart inteqrasiyası ilə risk yoxdur.
+Qərar: Təsdiqləndi.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 16. Impact Analysis -->
+      <article class="prompt-card tpl-card" data-cat="analiz">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">Impact Analysis (Təsir analizi)</h3>
+              <span class="tpl-level tpl-level-praktiki">Praktiki</span>
+            </div>
+            <p class="tpl-short">Bir dəyişikliyin hansı sistem, proses və komandaya təsir edəcəyini qiymətləndirir.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Dəyişiklikdən və ya yeni tələbdən əvvəl riski və əhatəni anlamaq üçün.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Bir dəyişikliyin nəyə toxunacağını əvvəlcədən görmək — beləliklə gözlənilməz problemlərin qarşısını almaq.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Dəyişikliyin təsviri</li>
+              <li>Təsir olunan sahələr (sistem, proses, data, komanda)</li>
+              <li>Risk və azaltma tədbirləri</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">TƏSİR ANALİZİ (IMPACT ANALYSIS)
+
+- Dəyişiklik / tələb:
+- Tarix / müəllif:
+
+Təsir olunan sahələr:
+   - Sistemlər / modullar:
+   - Biznes prosesləri:
+   - Məlumat (data):
+   - İnteqrasiyalar / API:
+   - İstifadəçilər / komandalar:
+
+Təsir səviyyəsi: Yüksək / Orta / Aşağı
+
+Risklər:
+   - Risk:
+   - Ehtimal / nəticə:
+   - Azaltma tədbiri:
+
+Lazım olan iş / resurs:
+   -
+
+Tövsiyə:
+   -</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">Dəyişiklik: Login üsulunu OTP-yə keçirmək.
+Təsir: Login modulu, SMS inteqrasiyası, dəstək komandasının təlimi.
+Risk: SMS gecikməsi → azaltma: təkrar göndər düyməsi.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 17. Traceability Matrix -->
+      <article class="prompt-card tpl-card" data-cat="analiz">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">Traceability Matrix (İzlənmə matrisi)</h3>
+              <span class="tpl-level tpl-level-praktiki">Praktiki</span>
+            </div>
+            <p class="tpl-short">Hər tələbin user story, dizayn və testlə əlaqəsini izləyən cədvəl.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Heç bir tələbin unudulmadığını və test edildiyini yoxlamaq üçün.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Hər tələbi mənbədən test nəticəsinə qədər izləyib heç bir tələbin boşda qalmadığını təmin etmək.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Tələb ID və təsviri</li>
+              <li>Əlaqəli user story / funksiya</li>
+              <li>Test case ID və status</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">İZLƏNMƏ MATRİSİ (TRACEABILITY MATRIX)
+
+| Tələb ID | Tələbin təsviri | User Story / Funksiya | Test Case ID | Status |
+|----------|-----------------|-----------------------|--------------|--------|
+| BT-01    |                 | US-01                 | TC-01        | Keçdi  |
+| BT-02    |                 | US-02                 | TC-02        | Açıq   |
+| FT-01    |                 | US-03                 | TC-03, TC-04 |        |
+
+Qeyd: Hər tələbin ən azı bir test case ilə örtülməsinə əmin ol.</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">BT-01 «Müştəri müqavilələrini görür» → US-01 → TC-01 (Keçdi).
+Belə cədvəl göstərir ki, hansı tələb test olunub, hansı hələ açıqdır.</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 18. Stakeholder Register (Analiz + Meeting & Communication) -->
+      <article class="prompt-card tpl-card" data-cat="analiz comm">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">Stakeholder Register Şablonu</h3>
+              <span class="tpl-level tpl-level-orta">Orta</span>
+            </div>
+            <p class="tpl-short">Layihənin maraqlı tərəflərini bir cədvəldə sistemli şəkildə qeyd edir.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Layihənin başlanğıcında, elicitation mərhələsində və ya yeni stakeholder əlavə olunduqda.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Layihədə iştirak edən və ya layihədən təsirlənən maraqlı tərəfləri sistemli şəkildə qeyd etmək üçün istifadə olunur — kim, hansı təsir səviyyəsi, hansı gözlənti və hansı risklə.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Stakeholder adı, rolu, şöbəsi</li>
+              <li>Təsir səviyyəsi və qərarvermə səlahiyyəti</li>
+              <li>Əlaqə kanalı, gözləntilər və risklər</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">STAKEHOLDER REGISTER
+
+| Stakeholder adı | Rol / Vəzifə | Şöbə / Komanda | Layihədə rolu | Təsir səviyyəsi | Qərarvermə səlahiyyəti | Əlaqə kanalı | Gözləntilər | Risk / Qeyd |
+| --------------- | ------------ | -------------- | ------------- | --------------- | ---------------------- | ------------ | ----------- | ----------- |
+|                 |              |                |               | Yüksək/Orta/Aşağı | Bəli / Xeyr          |              |             |             |</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example"><strong>Aysel Məmmədova</strong> — Product Owner (Digital Channels)
+Layihədə rolu: biznes tələblərinin təsdiqi · Təsir səviyyəsi: Yüksək · Qərarvermə: Bəli
+Əlaqə kanalı: Email / Jira · Gözlənti: müştəri kabinetində müqavilələrin görünməsi
+Risk / Qeyd: tələblər gec təsdiqlənərsə UAT gecikə bilər</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 19. Texniki Analiz Sənədi (Analiz) -->
+      <article class="prompt-card tpl-card" data-cat="analiz">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">Texniki Analiz Sənədi Şablonu</h3>
+              <span class="tpl-level tpl-level-praktiki">Praktiki</span>
+            </div>
+            <p class="tpl-short">AS-IS analizi, TO-BE həll dizaynı, tələblər, API-lər və field təsvirlərini bir sənəddə birləşdirən geniş şablon.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Yeni funksionallıq, mövcud prosesdə dəyişiklik, inteqrasiya, API dəyişiklikləri və ya sistemlərarası təsir analizi zamanı.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Bu sənəd mövcud vəziyyətin analizini, hədəf həll dizaynını, biznes və funksional tələbləri, API-ləri, field təsvirlərini və açıq sualları bir yerdə toplamaq üçün istifadə olunur.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>1. Requirements Elicitation — tələblərin mənbələri və açar suallar</li>
+              <li>2. Stakeholder Register — maraqlı tərəflər</li>
+              <li>3. AS-IS — mövcud vəziyyətin analizi (workflow, API-lər, açıq suallar)</li>
+              <li>4. TO-BE — hədəf həll dizaynı, tələblər, field-lər və API-lər</li>
+            </ul>
+            <p style="margin-top:10px;">Qeyd: Şablon real layihə üçün uzundur — lazım olmayan bölmələri silə, cədvəlləri öz sistemə uyğunlaşdıra bilərsən.</p>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">TEXNİKİ ANALİZ SƏNƏDİ
+
+============================================================
+1. REQUIREMENTS ELICITATION
+============================================================
+
+1.1 Purpose
+Bu bölmədə tələblərin hansı mənbələrdən və hansı görüşlər
+əsasında toplandığı qeyd olunur.
+
+1.2 Elicitation Sources
+| Mənbə           | Tip      | Link / Attachment | Qeyd |
+| --------------- | -------- | ----------------- | ---- |
+| Biznes görüşü   | Meeting  |                   |      |
+| Email yazışması | Email    |                   |      |
+| Mövcud sənəd    | Document |                   |      |
+
+1.3 Key Questions
+| Sual | Cavab | Cavablandıran şəxs | Status |
+| ---- | ----- | ------------------ | ------ |
+|      |       |                    | Open   |
+
+============================================================
+2. STAKEHOLDER REGISTER
+============================================================
+| Stakeholder adı | Rol / Vəzifə | Şöbə / Komanda | Layihədə rolu | Təsir səviyyəsi | Qərarvermə səlahiyyəti | Əlaqə kanalı | Gözləntilər | Qeyd |
+| --------------- | ------------ | -------------- | ------------- | --------------- | ---------------------- | ------------ | ----------- | ---- |
+|                 |              |                |               |                 |                        |              |             |      |
+
+============================================================
+3. AS-IS — CURRENT STATE ANALYSIS
+============================================================
+
+3.1 Document Header
+| Field               | Description                                  |
+| ------------------- | -------------------------------------------- |
+| Issue Type          | Epic / Task                                  |
+| Epic / Task         | Jira link və ya task ID                      |
+| Initiator           | Sorğunu başladan şəxs / komanda              |
+| Expectation         | Mövcud problemin və gözləntinin qısa təsviri |
+| Translate Page Link | Uyğun Confluence / dokumentasiya linki       |
+
+3.2 AS-IS Workflow
+| Workflow item            | Link / Description                 |
+| ------------------------ | ---------------------------------- |
+| BPMN / UML / FigJam Link | Mövcud proses axınının linki       |
+| Current UI / Screen      | Mövcud ekran görüntüsü və ya link  |
+| Current system behavior  | Sistemin hal-hazırda necə işlədiyi |
+
+3.3 Detailed Workflow — Scenarios
+| Step Name | Step Description |
+| --------- | ---------------- |
+| Addım 1   |                  |
+| Addım 2   |                  |
+
+3.4 Existing APIs
+| API Name             | Method   | Endpoint | Purpose                                    | Request Model | Response Model | Response Codes | Swagger Link | Related Screen |
+| -------------------- | -------- | -------- | ------------------------------------------ | ------------- | -------------- | -------------- | ------------ | -------------- |
+| Get Asan info by FIN | GET/POST |          | FIN üzrə ASAN məlumatlarının əldə edilməsi |               |                | 200, 400, 500  |              |                |
+
+3.4.1 Table / DB Names
+| Table / DB Name | Purpose | Related API | Notes |
+| --------------- | ------- | ----------- | ----- |
+| will be added   |         |             |       |
+
+3.5 Stakeholders Involved
+(Bax: 2. Stakeholder Register)
+
+3.6 Sources Used
+| Source | Type | Link / Attachment | Notes |
+| ------ | ---- | ----------------- | ----- |
+|        |      |                   |       |
+
+3.7 Open Questions
+| ID | Question | Owner | Status | Answer / Note |
+| -- | -------- | ----- | ------ | ------------- |
+| Q1 |          |       | Open   |               |
+
+============================================================
+4. TO-BE — SOLUTION DESIGN &amp; REQUIREMENTS
+============================================================
+
+4.1 Document Header
+| Field               | Description                            |
+| ------------------- | -------------------------------------- |
+| Issue Type          | Epic / Task                            |
+| Epic / Task         | Jira link və ya task ID                |
+| Initiator           | Sorğunu başladan şəxs / komanda        |
+| Expectations        | Hədəf nəticə və biznes gözləntisi      |
+| Translate Page Link | Uyğun Confluence / dokumentasiya linki |
+
+4.2 TO-BE Workflow
+| Workflow item             | Link / Description                                |
+| ------------------------- | ------------------------------------------------- |
+| BPMN / UML / FigJam Link  | Yeni proses axınının linki                        |
+| UI Screen                 | Yeni ekran görüntüsü və ya dizayn linki           |
+| UI Component Details      | Ekrandakı komponentlərin izahı                    |
+| Button Actions            | Button klikləndikdə hansı əməliyyatın baş verdiyi |
+| Related API               | Klik və ya əməliyyat zamanı müraciət edilən API   |
+| Request / Response Models | API request və response modelləri                 |
+
+Qeyd: Bu bölmədə UI ekran görüntüsü əlavə edilməli, ekrandakı
+komponentlər izah olunmalı, button varsa klikləndikdə hansı
+API-yə müraciət edildiyi və request/response modelləri
+göstərilməlidir.
+
+4.3 Detailed Workflow — Scenarios
+| Step Name | Step Description |
+| --------- | ---------------- |
+| Addım 1   |                  |
+| Addım 2   |                  |
+| Addım 3   |                  |
+
+4.4 Business Requirements
+| ID     | Description | Priority            | Business Goal |
+| ------ | ----------- | ------------------- | ------------- |
+| BR-001 |             | High / Medium / Low |               |
+
+4.5 Functional Requirements
+| ID     | Title | Description | Requirements |
+| ------ | ----- | ----------- | ------------ |
+| FR-001 |       |             |              |
+
+4.6 Field Descriptions
+| Field / Attribute | Type   | Required | Validation         | Min-Max Value | Example | Related Screen             |
+| ----------------- | ------ | -------- | ------------------ | ------------- | ------- | -------------------------- |
+| fin               | String | Yes      | 7 simvol olmalıdır | 7             | ABC1234 | Müştəri məlumatları ekranı |
+
+4.7 APIs
+| API Name | Mapping | Enum | Response Codes     | Swagger Link | Related Screen |
+| -------- | ------- | ---- | ------------------ | ------------ | -------------- |
+|          |         |      | 200, 400, 404, 500 |              |                |
+
+4.8 Stakeholders
+(Bax: 2. Stakeholder Register)
+
+4.9 Elicitation Sources
+(Bax: 1. Requirements Elicitation)
+
+4.10 Open Questions
+| ID | Question | Owner | Status | Answer / Note |
+| -- | -------- | ----- | ------ | ------------- |
+| Q1 |          |       | Open   |               |</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example"><strong>4.6 Field Descriptions — nümunə:</strong>
+Field: fin · Type: String · Required: Yes · Validation: 7 simvol olmalıdır · Example: ABC1234 · Ekran: Müştəri məlumatları
+
+<strong>3.4 Existing APIs — nümunə:</strong>
+API: Get Asan info by FIN · Method: GET/POST · Endpoint: /asan/info · Purpose: FIN üzrə ASAN məlumatı · Codes: 200, 400, 500</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 20. Meeting Minutes -->
+      <article class="prompt-card tpl-card" data-cat="comm">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">Meeting Minutes (Görüş qeydləri)</h3>
+              <span class="tpl-level tpl-level-baslangic">Başlanğıc</span>
+            </div>
+            <p class="tpl-short">Görüşdə danışılanları, qərarları və tapşırıqları qeyd edir.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Hər stakeholder görüşü və ya komanda toplantısından sonra.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Görüşdə nə razılaşdırıldığını yazılı saxlamaq — kimin nəyə cavabdeh olduğu və hansı qərarların verildiyi sonradan qarışmasın.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Görüş məlumatı və iştirakçılar</li>
+              <li>Müzakirə mövzuları və qərarlar</li>
+              <li>Tapşırıqlar (action items)</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">GÖRÜŞ QEYDLƏRİ (MEETING MINUTES)
+
+- Görüşün mövzusu:
+- Tarix / saat:
+- Yer / platforma:
+- İştirakçılar:
+- İştirak etməyənlər:
+
+Gündəlik (Agenda):
+   1.
+   2.
+
+Müzakirə / əsas məqamlar:
+   -
+
+Qərarlar:
+   -
+
+Tapşırıqlar (Action Items):
+   | Tapşırıq | Cavabdeh | Son tarix |
+   |----------|----------|-----------|
+   |          |          |           |
+
+Növbəti görüş:</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">Qərar: Login üsulu OTP olacaq.
+Tapşırıq: «API tələbini hazırla — IT BA — 20.06».</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 21. Stakeholder Interview Questions -->
+      <article class="prompt-card tpl-card" data-cat="comm">
+        <div class="prompt-head">
+          <div class="tpl-head-main">
+            <div class="tpl-name-row">
+              <h3 class="tpl-name">Stakeholder Interview Questions</h3>
+              <span class="tpl-level tpl-level-baslangic">Başlanğıc</span>
+            </div>
+            <p class="tpl-short">Maraqlı tərəflərdən tələbləri toplamaq üçün hazır sual dəsti.</p>
+            <p class="tpl-when"><strong>Nə vaxt:</strong> Tələblərin toplanması (elicitation) mərhələsində müsahibə apararkən.</p>
+          </div>
+          <div class="prompt-actions tpl-actions">
+            <button class="copy-btn">📋 Kopyala</button>
+            <span class="tpl-toggle">Şablona bax <span class="prompt-chevron">▾</span></span>
+          </div>
+        </div>
+        <div class="prompt-collapse">
+          <div class="tpl-detail">
+            <h4>Məqsəd</h4>
+            <p>Stakeholderdən düzgün sualları soruşaraq real ehtiyacı, problemi və gözləntini üzə çıxarmaq.</p>
+            <h4>Əsas bölmələr</h4>
+            <ul>
+              <li>Kontekst və rol sualları</li>
+              <li>Problem və ehtiyac sualları</li>
+              <li>Proses, gözlənti və prioritet sualları</li>
+            </ul>
+            <h4>Hazır şablon</h4>
+<pre class="prompt-text">STAKEHOLDER MÜSAHİBƏ SUALLARI
+
+Rol və kontekst:
+   - Bu prosesdə sizin rolunuz nədir?
+   - Gündəlik işinizdə bu sistemdən necə istifadə edirsiniz?
+
+Hazırkı vəziyyət (As-Is):
+   - İndi bu iş necə görülür?
+   - Hansı addımlar vaxt aparır və ya çətindir?
+
+Problem və ehtiyac:
+   - Ən böyük problem nədir?
+   - Bu problem işə necə təsir edir?
+
+Gözləntilər (To-Be):
+   - İdeal həll necə görünərdi?
+   - Hansı nəticə sizin üçün uğur sayılır?
+
+Prioritet və məhdudiyyət:
+   - Ən vacib funksiya hansıdır?
+   - Hər hansı məhdudiyyət və ya qayda varmı?
+
+Yekun:
+   - Əlavə etmək istədiyiniz nə var?
+   - Bu mövzuda daha kimlə danışmalıyam?</pre>
+            <h4>Nümunə</h4>
+            <div class="tpl-example">Sual: «İndi müştəri müqaviləsini necə öyrənir?»
+Cavab: «Filiala zəng edir.» → Buradan «onlayn müqavilə görünüşü» ehtiyacı üzə çıxır.</div>
+          </div>
+        </div>
+      </article>
+
     </div>
   </section>
 
+  <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">

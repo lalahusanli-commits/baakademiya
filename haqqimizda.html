@@ -12,18 +12,32 @@
     gtag('js', new Date());
     gtag('config', 'G-9MJH9BJH31');
   </script>
-  <title>Haqqımızda — IT BA & AI Excellence Hub</title>
-  <meta name="description" content="IT BA & AI Excellence Hub layihəsi və missiyamız haqqında.">
+  <title>Haqqımızda | IT BA & AI Excellence Hub</title>
+  <meta name="description" content="IT BA & AI Excellence Hub Azərbaycan dilində IT Biznes Analitika öyrənmək istəyənlər üçün yaradılmış pulsuz və praktik resurs platformasıdır. Platformanın hekayəsi və müəllif haqqında.">
+
+  <!-- Şrift (Google Fonts) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Dizayn faylı -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Yalnız bu səhifəyə aid kiçik tənzimləmə: hero başlığını balanslaşdırır -->
+  <style>
+    .about-hero-title {
+      font-size: clamp(1.7rem, 4vw, 2.6rem);
+    }
+  </style>
 </head>
 <body>
+
+  <!-- ============ YUXARI MENYU ============ -->
   <header class="site-header">
     <div class="container">
       <nav class="nav">
         <a href="index.html" class="nav-logo">IT BA &amp; AI<span>Excellence Hub</span></a>
+
         <ul class="nav-links">
           <li><a href="oyren.html">Öyrən</a></li>
           <li><a href="prompt-engineering.html">Prompt Engineering</a></li>
@@ -33,39 +47,138 @@
           <li><a href="icma.html">İcma</a></li>
           <li><a href="haqqimizda.html">Haqqımızda</a></li>
         </ul>
-        <button class="nav-toggle" aria-label="Menyunu aç"><span></span><span></span><span></span></button>
+
+        <!-- Mobil menyu düyməsi -->
+        <button class="nav-toggle" aria-label="Menyunu aç">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
+  <!-- ============ HERO ============ -->
+  <section class="hero" style="padding:64px 0 56px;">
     <div class="container">
       <span class="badge">📄 Haqqımızda</span>
-      <h1>Haqqımızda</h1>
-      <p>IT BA & AI Excellence Hub layihəsi və missiyamız haqqında.</p>
+      <h1 class="about-hero-title">Real işdə tətbiq olunan IT BA bilikləri sadə dildə və praktik formada.</h1>
+      <p>
+        IT BA &amp; AI Excellence Hub Azərbaycan dilində IT Biznes Analitika öyrənmək, hazır
+        şablonlardan istifadə etmək və gündəlik işdə tətbiq oluna bilən biliklər əldə etmək
+        istəyənlər üçün yaradılmış açıq platformadır.
+      </p>
       <div class="hero-buttons">
-        <a href="index.html" class="btn btn-outline">← Ana səhifə</a>
+        <a href="oyren.html" class="btn btn-primary">Öyrənməyə başla</a>
+        <a href="sablonlar.html" class="btn btn-outline">Şablonlara bax</a>
       </div>
     </div>
   </section>
 
+  <!-- ============ BİZİ HƏRƏKƏTƏ GƏTİRƏN NƏDİR? ============ -->
+  <section class="section section-soft">
+    <div class="container">
+      <h2 class="section-title">Bizi hərəkətə gətirən nədir?</h2>
+
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="card-icon">🎯</div>
+          <h3>Vizyonumuz</h3>
+          <p>Azərbaycanda IT Biznes Analitika sahəsində öyrənmək və inkişaf etmək istəyənlər üçün etibarlı əsas platformalardan birinə çevrilmək.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <h3>Missiyamız</h3>
+          <p>IT Biznes Analitika biliklərini ana dilində, sadə və real işə uyğun formada hər kəs üçün əlçatan etmək.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💎</div>
+          <h3>Dəyərlərimiz</h3>
+          <p>Pulsuz, praktik və başadüşülən bilik paylaşaraq öyrənmək istəyən hər kəsə real dəyər qatmaq.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KİM ÜÇÜNDÜR? ============ -->
   <section class="section">
-    <div class="container" style="text-align:center;">
-      <div class="card" style="max-width:560px;margin:0 auto;">
-        <div class="card-icon" style="margin:0 auto 18px;">🚧</div>
-        <h3>Bu səhifə hazırlanır</h3>
-        <p>Tezliklə burada zəngin məzmun olacaq. İzləməkdə davam et!</p>
+    <div class="container">
+      <h2 class="section-title">Bu platforma kim üçündür?</h2>
+      <p class="section-subtitle">Harada olmağından asılı olmayaraq, burada sənə uyğun məzmun var.</p>
+
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="card-icon">🌱</div>
+          <h3>IT BA olmaq istəyənlər</h3>
+          <p>Sahəni sıfırdan öyrənib ilk addımı atmaq istəyənlər üçün.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔄</div>
+          <h3>Başqa sahədən keçənlər</h3>
+          <p>QA, PM, PO və digər rollardan IT BA sahəsinə keçmək istəyənlər üçün.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📈</div>
+          <h3>İşləyən IT BA-lar</h3>
+          <p>Artıq işləyən və biliklərini dərinləşdirmək istəyən analitiklər üçün.</p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- ============ MÜƏLLİF BLOKU ============ -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="card" style="max-width:680px;margin:0 auto;display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap;">
+        <img src="assets/images/author.jpg" alt="Lalə" width="110" height="110"
+             style="width:110px;height:110px;border-radius:50%;object-fit:cover;flex-shrink:0;">
+        <div style="flex:1;min-width:240px;">
+          <h2 style="font-size:1.5rem;margin-bottom:10px;">Salam, mən Lalə 👋</h2>
+          <p style="margin-bottom:14px;">
+            Hazırda ABB Bankda Senior IT Biznes Analyst kimi çalışıram və bu sahədə 12+ illik
+            təcrübəm var. Bu illər ərzində müxtəlif layihələrdə tələblərin toplanması,
+            analiz edilməsi, sənədləşdirilməsi və biznes ehtiyaclarının işlək texniki həllərə
+            çevrilməsi üzərində çalışmışam.
+          </p>
+          <p style="margin-bottom:14px;">
+            Bu platformanı yaratmağımın səbəbi sadədir: vaxtilə özümün ehtiyac duyduğum praktik,
+            Azərbaycan dilində və başadüşülən IT BA resursunu başqaları üçün əlçatan etmək istədim.
+          </p>
+          <p style="margin-bottom:14px;">
+            Bu saytı front-end developer olmadan, AI alətlərindən istifadə edərək, addım-addım
+            öyrənə-öyrənə qurdum. Ona görə burada IT BA-lar üçün AI istifadəsindən danışanda bunu
+            nəzəri fikir kimi demirəm.
+          </p>
+          <p style="background:var(--color-primary-light);color:var(--color-heading);border-radius:12px;padding:14px 16px;margin-bottom:18px;font-weight:600;">
+            Bu saytın özü IT BA-lar üçün AI istifadəsinin praktik nümunəsidir.
+          </p>
+          <p style="margin-bottom:14px;">
+            İnanıram ki, yaxşı IT Biznes Analitik olmaq üçün ən vacib bacarıqlardan biri doğru sual
+            verməkdir — stakeholder-ə, komandaya, problemə və bu gün artıq AI alətlərinə də.
+          </p>
+          <p style="margin-bottom:18px;">
+            Bu platformanı da həmin yanaşma ilə qururam: doğru suallar, sadə cavablar və real işdə
+            istifadə oluna bilən praktik materiallar.
+          </p>
+          <div class="btn-row">
+            <a href="https://www.linkedin.com/in/lala-husanli/" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn profilim</a>
+            <a href="icma.html" class="btn btn-outline">İcmaya qoşul</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-grid">
+
         <div>
           <div class="footer-brand">IT BA & AI Excellence Hub</div>
-          <p>Azərbaycan dilində IT biznes analitiklər üçün pulsuz təhsil platforması.</p>
+          <p>Azərbaycan dilində IT biznes analitiklər üçün pulsuz təhsil platforması. Hamı üçün açıq bilik.</p>
         </div>
+
         <div>
           <h4>Öyrənmə</h4>
           <ul>
@@ -75,6 +188,7 @@
             <li><a href="terminler.html">Terminlər</a></li>
           </ul>
         </div>
+
         <div>
           <h4>Saytda</h4>
           <ul>
@@ -83,6 +197,7 @@
             <li><a href="haqqimizda.html">Haqqımızda</a></li>
           </ul>
         </div>
+
         <div>
           <h4>Əlaqə</h4>
           <ul>
@@ -90,10 +205,16 @@
             <li><a href="haqqimizda.html">Bizimlə əlaqə</a></li>
           </ul>
         </div>
+
       </div>
-      <div class="footer-bottom">© 2026 IT BA & AI Excellence Hub. Bütün hüquqlar qorunur. Sevgi ilə hazırlanıb 🇦🇿</div>
+
+      <div class="footer-bottom">
+        © 2026 IT BA & AI Excellence Hub. Bütün hüquqlar qorunur. Sevgi ilə hazırlanıb 🇦🇿
+      </div>
     </div>
   </footer>
+
+  <!-- JavaScript -->
   <script src="js/main.js"></script>
 </body>
 </html>

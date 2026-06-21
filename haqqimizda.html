@@ -23,11 +23,37 @@
   <!-- Dizayn faylı -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Yalnız bu səhifəyə aid kiçik tənzimləmə: hero başlığını balanslaşdırır -->
+  <!-- Yalnız bu səhifəyə aid kiçik stillər (global dizayn sisteminə toxunmur) -->
   <style>
-    .about-hero-title {
-      font-size: clamp(1.7rem, 4vw, 2.6rem);
+    .about-hero-title { font-size: clamp(1.7rem, 4vw, 2.6rem); }
+
+    /* Müəllif bloku */
+    .about-author-card {
+      max-width: 680px;
+      margin: 0 auto;
+      display: flex;
+      gap: 26px;
+      align-items: flex-start;
+      flex-wrap: wrap;
     }
+    .about-author-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .about-author-body { flex: 1; min-width: 240px; }
+    .about-author-body p { margin-bottom: 14px; }
+    .about-author-name { font-size: 1.5rem; margin-bottom: 10px; }
+    .about-author-highlight {
+      background: var(--color-primary-light);
+      color: var(--color-heading);
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-weight: 600;
+    }
+    .about-author-body .btn-row { margin-top: 18px; }
   </style>
 </head>
 <body>
@@ -64,9 +90,9 @@
       <span class="badge">📄 Haqqımızda</span>
       <h1 class="about-hero-title">Real işdə tətbiq olunan IT BA bilikləri sadə dildə və praktik formada.</h1>
       <p>
-        IT BA &amp; AI Excellence Hub Azərbaycan dilində IT Biznes Analitika öyrənmək, hazır
+        IT BA &amp; AI Excellence Hub Azərbaycan dilində IT Biznes Analitika öyrənmək, praktik
         şablonlardan istifadə etmək və gündəlik işdə tətbiq oluna bilən biliklər əldə etmək
-        istəyənlər üçün yaradılmış açıq platformadır.
+        istəyənlər üçün yaradılmış açıq resurs platformasıdır.
       </p>
       <div class="hero-buttons">
         <a href="oyren.html" class="btn btn-primary">Öyrənməyə başla</a>
@@ -84,17 +110,17 @@
         <div class="card">
           <div class="card-icon">🎯</div>
           <h3>Vizyonumuz</h3>
-          <p>Azərbaycanda IT Biznes Analitika sahəsində öyrənmək və inkişaf etmək istəyənlər üçün etibarlı əsas platformalardan birinə çevrilmək.</p>
+          <p>Azərbaycanda IT BA sahəsini öyrənmək istəyənlər üçün sadə, praktik və etibarlı başlanğıc nöqtəsi olmaq.</p>
         </div>
         <div class="card">
           <div class="card-icon">🚀</div>
           <h3>Missiyamız</h3>
-          <p>IT Biznes Analitika biliklərini ana dilində, sadə və real işə uyğun formada hər kəs üçün əlçatan etmək.</p>
+          <p>Mürəkkəb IT BA anlayışlarını ana dilində, real layihə məntiqinə uyğun və başa düşülən formada izah etmək.</p>
         </div>
         <div class="card">
-          <div class="card-icon">💎</div>
-          <h3>Dəyərlərimiz</h3>
-          <p>Pulsuz, praktik və başadüşülən bilik paylaşaraq öyrənmək istəyən hər kəsə real dəyər qatmaq.</p>
+          <div class="card-icon">🧭</div>
+          <h3>Yanaşmamız</h3>
+          <p>Az nəzəriyyə, daha çox tətbiq: şablonlar, nümunələr, izahlar və gündəlik işdə istifadə oluna bilən materiallar.</p>
         </div>
       </div>
     </div>
@@ -110,17 +136,17 @@
         <div class="card">
           <div class="card-icon">🌱</div>
           <h3>IT BA olmaq istəyənlər</h3>
-          <p>Sahəni sıfırdan öyrənib ilk addımı atmaq istəyənlər üçün.</p>
+          <p>Peşə ilə yeni tanış olub sahəyə ilk addımını atmaq istəyənlər.</p>
         </div>
         <div class="card">
           <div class="card-icon">🔄</div>
           <h3>Başqa sahədən keçənlər</h3>
-          <p>QA, PM, PO və digər rollardan IT BA sahəsinə keçmək istəyənlər üçün.</p>
+          <p>QA, PM, PO və digər IT rollarından IT BA istiqamətinə keçid edənlər.</p>
         </div>
         <div class="card">
           <div class="card-icon">📈</div>
           <h3>İşləyən IT BA-lar</h3>
-          <p>Artıq işləyən və biliklərini dərinləşdirmək istəyən analitiklər üçün.</p>
+          <p>Artıq bu sahədə çalışan və biliklərini sistemli şəkildə dərinləşdirmək istəyənlər.</p>
         </div>
       </div>
     </div>
@@ -129,36 +155,27 @@
   <!-- ============ MÜƏLLİF BLOKU ============ -->
   <section class="section section-soft">
     <div class="container">
-      <div class="card" style="max-width:680px;margin:0 auto;display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap;">
-        <img src="assets/images/author.jpg" alt="Lalə" width="110" height="110"
-             style="width:110px;height:110px;border-radius:50%;object-fit:cover;flex-shrink:0;">
-        <div style="flex:1;min-width:240px;">
-          <h2 style="font-size:1.5rem;margin-bottom:10px;">Salam, mən Lalə 👋</h2>
-          <p style="margin-bottom:14px;">
+      <div class="card about-author-card">
+        <img src="assets/images/author.jpg" alt="Lalə" width="110" height="110" class="about-author-img">
+        <div class="about-author-body">
+          <h2 class="about-author-name">Salam, mən Lalə 👋</h2>
+          <p>
             Hazırda ABB Bankda Senior IT Biznes Analyst kimi çalışıram və bu sahədə 12+ illik
-            təcrübəm var. Bu illər ərzində müxtəlif layihələrdə tələblərin toplanması,
-            analiz edilməsi, sənədləşdirilməsi və biznes ehtiyaclarının işlək texniki həllərə
-            çevrilməsi üzərində çalışmışam.
+            təcrübəm var. Bu illər ərzində tələblərin toplanması, analizi, sənədləşdirilməsi və
+            biznes ehtiyaclarının işlək texniki həllərə çevrilməsi üzərində işləmişəm.
           </p>
-          <p style="margin-bottom:14px;">
-            Bu platformanı yaratmağımın səbəbi sadədir: vaxtilə özümün ehtiyac duyduğum praktik,
-            Azərbaycan dilində və başadüşülən IT BA resursunu başqaları üçün əlçatan etmək istədim.
+          <p>
+            Bu platformanı Azərbaycan dilində praktik IT BA resurslarına olan ehtiyacdan yaratdım —
+            vaxtilə özümün axtarıb tapmadığım resursu başqaları üçün əlçatan etmək istədim. Saytı
+            front-end developer olmadan, AI alətlərindən istifadə edərək addım-addım qurdum.
           </p>
-          <p style="margin-bottom:14px;">
-            Bu saytı front-end developer olmadan, AI alətlərindən istifadə edərək, addım-addım
-            öyrənə-öyrənə qurdum. Ona görə burada IT BA-lar üçün AI istifadəsindən danışanda bunu
-            nəzəri fikir kimi demirəm.
+          <p class="about-author-highlight">
+            Bu platforma həm də AI alətlərinin IT BA işində necə praktik istifadə oluna biləcəyinə
+            dair real nümunədir.
           </p>
-          <p style="background:var(--color-primary-light);color:var(--color-heading);border-radius:12px;padding:14px 16px;margin-bottom:18px;font-weight:600;">
-            Bu saytın özü IT BA-lar üçün AI istifadəsinin praktik nümunəsidir.
-          </p>
-          <p style="margin-bottom:14px;">
-            İnanıram ki, yaxşı IT Biznes Analitik olmaq üçün ən vacib bacarıqlardan biri doğru sual
-            verməkdir — stakeholder-ə, komandaya, problemə və bu gün artıq AI alətlərinə də.
-          </p>
-          <p style="margin-bottom:18px;">
-            Bu platformanı da həmin yanaşma ilə qururam: doğru suallar, sadə cavablar və real işdə
-            istifadə oluna bilən praktik materiallar.
+          <p>
+            Əsas yanaşmam sadədir: doğru suallar, sadə izahlar və real işdə istifadə oluna bilən
+            materiallar.
           </p>
           <div class="btn-row">
             <a href="https://www.linkedin.com/in/lala-husanli/" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn profilim</a>
@@ -202,7 +219,6 @@
           <h4>Əlaqə</h4>
           <ul>
             <li><a href="icma.html">İcmaya qoşul</a></li>
-            <li><a href="haqqimizda.html">Bizimlə əlaqə</a></li>
           </ul>
         </div>
 
